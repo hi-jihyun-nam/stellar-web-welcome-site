@@ -16,20 +16,24 @@ const Hero = () => {
           <span className="text-sm text-white/90">Connecting Korea to the World</span>
         </div>
 
-        {/* Main Headline */}
-        <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-white via-teal-200 to-cyan-200 bg-clip-text text-transparent mb-6 animate-fade-in">
+        {/* Main Headline - Made smaller */}
+        <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white via-teal-200 to-cyan-200 bg-clip-text text-transparent mb-6 animate-fade-in">
           C&P Ventures
           <br />
-          <span className="bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent text-4xl md:text-5xl">
+          <span className="bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent text-2xl md:text-3xl">
             Clinic & People
           </span>
         </h1>
 
-        {/* Subtitle */}
-        <p className="text-xl md:text-2xl text-white/70 mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in">
-          We connect Korea's top medical institutions and beauty clinics to the world. 
-          Beyond information, we build personalized bridges of trust, understanding, and excellence.
-        </p>
+        {/* Highlighted Main Explanation */}
+        <div className="bg-gradient-to-r from-teal-500/20 to-cyan-500/20 backdrop-blur-sm border border-teal-400/30 rounded-2xl p-8 mb-12 animate-fade-in">
+          <p className="text-2xl md:text-3xl text-white font-semibold mb-4 leading-relaxed">
+            We connect Korea's top medical institutions and beauty clinics to the world.
+          </p>
+          <p className="text-lg md:text-xl text-teal-100 leading-relaxed">
+            Beyond information, we build personalized bridges of trust, understanding, and excellence.
+          </p>
+        </div>
 
         {/* Stats */}
         <div className="flex flex-col sm:flex-row gap-8 justify-center items-center mt-16 animate-fade-in">

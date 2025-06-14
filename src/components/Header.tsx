@@ -1,10 +1,10 @@
 
 const Header = () => {
   return (
-    <header className="relative z-50">
-      <div className="max-w-7xl mx-auto px-6 py-6">
+    <header>
+      <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-start">
-          <h1 className="text-3xl font-bold text-gray-900 font-poppins tracking-tight">
+          <h1 className="text-2xl font-bold text-gray-900 font-poppins">
             Kimio
           </h1>
         </div>

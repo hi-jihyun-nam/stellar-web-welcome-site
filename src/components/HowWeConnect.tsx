@@ -1,4 +1,3 @@
-
 import { Heart, MessageCircle, Shield, Users2, Globe, Star } from "lucide-react";
 
 const connectionPoints = [
@@ -23,7 +22,7 @@ const connectionPoints = [
   {
     icon: Star,
     title: "Meaningful Marketing",
-    description: "Marketing isn't about moving numbers—it's about moving people. We create connections that truly make a difference.",
+    description: "Marketing isn't about moving numbers, it's about moving people. We create connections that truly make a difference.",
     color: "from-purple-500 via-violet-600 to-purple-700"
   },
   {

@@ -1,4 +1,5 @@
 
+
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
@@ -28,7 +29,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
           {/* Brand Section */}
           <div>
-            <h3 className="text-4xl font-bold text-white mb-8 drop-shadow-lg">Kimlab</h3>
+            <h3 className="text-4xl font-bold text-white mb-8 drop-shadow-lg">Kimio</h3>
             <div className="flex items-center gap-3 mb-8">
               <span className="text-cyan-300 font-bold text-lg">Clinic & People</span>
               <span className="text-gray-400">|</span>
@@ -87,7 +88,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="pt-8 border-t border-white/20 text-center">
           <p className="text-gray-300 font-light text-lg">
-            © 2024 Kimlab. Crafting connections that transform lives.
+            © 2024 Kimio. Crafting connections that transform lives.
           </p>
         </div>
       </div>
@@ -96,3 +97,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

@@ -1,4 +1,5 @@
 
+
 const Header = () => {
   return (
     <header className="bg-slate-900/80 backdrop-blur-md border-b border-white/10">
@@ -6,7 +7,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <h1 className="text-2xl font-bold text-white">
-              Kimlab
+              Kimio
             </h1>
             <span className="ml-3 text-sm text-cyan-300 font-medium">
               Clinic & People
@@ -26,3 +27,4 @@ const Header = () => {
 };
 
 export default Header;
+

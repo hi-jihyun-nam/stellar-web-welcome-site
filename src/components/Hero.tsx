@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 blur-3xl"></div>
-      <div className="absolute top-20 left-20 w-72 h-72 bg-purple-500/30 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-yellow-600/20 to-amber-600/20 blur-3xl"></div>
+      <div className="absolute top-20 left-20 w-72 h-72 bg-amber-500/30 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-20 right-20 w-96 h-96 bg-yellow-500/20 rounded-full blur-3xl animate-pulse"></div>
       
       <div className="relative z-10 text-center max-w-6xl mx-auto">
         {/* Badge */}
@@ -18,10 +18,10 @@ const Hero = () => {
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent mb-6 animate-fade-in">
+        <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-white via-yellow-200 to-amber-200 bg-clip-text text-transparent mb-6 animate-fade-in">
           C&P Ventures
           <br />
-          <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent text-4xl md:text-5xl">
+          <span className="bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent text-4xl md:text-5xl">
             Clinic & People
           </span>
         </h1>
@@ -34,7 +34,7 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
-          <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 text-lg rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/25">
+          <Button size="lg" className="bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-700 hover:to-amber-700 text-navy-900 px-8 py-4 text-lg rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/25">
             Start Your Journey
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>

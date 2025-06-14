@@ -6,7 +6,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <h1 className="text-2xl font-bold text-white">
-              Crowd Anperson
+              Kimlab
             </h1>
             <span className="ml-3 text-sm text-cyan-300 font-medium">
               Clinic & People

@@ -48,7 +48,7 @@ const Hero = () => {
         <div className="mb-16 animate-fade-in">
           <div className="flex items-center justify-center gap-4 mb-4">
             <div className="text-lg text-blue-600 font-bold">Kimio</div>
-            <div className="text-lg text-gray-500 font-light italic">Beyond Reach. Into Relevance</div>
+            <div className="text-lg text-gray-500 font-bold italic">Beyond Reach. Into Relevance</div>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight drop-shadow-sm">
             Global Healthcare

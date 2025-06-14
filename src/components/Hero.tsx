@@ -1,15 +1,13 @@
 import { Sparkles, ArrowRight, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedCounter from "./AnimatedCounter";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 py-32 overflow-hidden">
-      {/* Enhanced 3D Background with animated gradient */}
-      <div className="absolute inset-0 animated-gradient-hero"></div>
+  return <section className="relative min-h-screen flex items-center justify-center px-6 py-32 overflow-hidden">
+      {/* Enhanced 3D Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50"></div>
       
       {/* Animated gradient overlay */}
-      <div className="absolute inset-0 animated-gradient-overlay"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-100/30 via-purple-100/40 to-teal-100/30 animate-pulse"></div>
       
       {/* 3D floating elements */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-blue-200/40 to-cyan-300/50 rounded-full blur-3xl animate-bounce [animation-duration:6s]"></div>
@@ -67,8 +65,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;

@@ -1,32 +1,24 @@
 import { Heart, Users, Globe } from "lucide-react";
-
-const missionPoints = [
-  {
-    icon: Heart,
-    title: "Medical Excellence",
-    description: "Connecting you with Korea's leading medical institutions and healthcare providers.",
-    color: "from-red-400 to-red-500"
-  },
-  {
-    icon: Users,
-    title: "Beauty & Wellness",
-    description: "Access to top beauty clinics and cosmetic brands that define Korean beauty standards.",
-    color: "from-purple-400 to-purple-500"
-  },
-  {
-    icon: Globe,
-    title: "Global Bridge",
-    description: "Bridging cultures and languages to make Korean services accessible worldwide.",
-    color: "from-blue-400 to-blue-500"
-  }
-];
-
+const missionPoints = [{
+  icon: Heart,
+  title: "Medical Excellence",
+  description: "Connecting you with Korea's leading medical institutions and healthcare providers.",
+  color: "from-red-400 to-red-500"
+}, {
+  icon: Users,
+  title: "Beauty & Wellness",
+  description: "Access to top beauty clinics and cosmetic brands that define Korean beauty standards.",
+  color: "from-purple-400 to-purple-500"
+}, {
+  icon: Globe,
+  title: "Global Bridge",
+  description: "Bridging cultures and languages to make Korean services accessible worldwide.",
+  color: "from-blue-400 to-blue-500"
+}];
 const Mission = () => {
-  return (
-    <section className="py-32 px-6 relative overflow-hidden">
-      {/* Animated gradient backgrounds */}
-      <div className="absolute inset-0 animated-gradient"></div>
-      <div className="absolute inset-0 animated-gradient-overlay"></div>
+  return <section className="py-32 px-6 relative bg-gradient-to-br from-blue-50 via-white to-purple-50 overflow-hidden">
+      {/* Animated gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-100/30 via-purple-100/40 to-teal-100/30 animate-pulse"></div>
       
       {/* 3D floating elements */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-blue-200/40 to-cyan-300/50 rounded-full blur-3xl animate-bounce [animation-duration:6s]"></div>
@@ -54,8 +46,7 @@ const Mission = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {missionPoints.map((point, index) => (
-            <div key={index} className="group relative p-8 bg-white/70 backdrop-blur-xl border border-gray-200/50 rounded-3xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:border-gray-300/70 shadow-lg">
+          {missionPoints.map((point, index) => <div key={index} className="group relative p-8 bg-white/70 backdrop-blur-xl border border-gray-200/50 rounded-3xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:border-gray-300/70 shadow-lg">
               <div className={`w-16 h-16 bg-gradient-to-br ${point.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                 <point.icon className="w-8 h-8 text-white" />
               </div>
@@ -65,12 +56,9 @@ const Mission = () => {
               <p className="text-gray-600 leading-relaxed font-light">
                 {point.description}
               </p>
-            </div>
-          ))}
+            </div>)}
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Mission;

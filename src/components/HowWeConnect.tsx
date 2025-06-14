@@ -1,4 +1,3 @@
-
 import { Heart, MessageCircle, Shield, Users2, Globe, Star } from "lucide-react";
 
 const connectionPoints = [
@@ -42,9 +41,10 @@ const connectionPoints = [
 
 const HowWeConnect = () => {
   return (
-    <section className="py-32 px-6 relative bg-gradient-to-br from-blue-50 via-white to-purple-50 overflow-hidden">
-      {/* Animated gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-100/30 via-purple-100/40 to-teal-100/30 animate-pulse"></div>
+    <section className="py-32 px-6 relative overflow-hidden">
+      {/* Animated gradient backgrounds */}
+      <div className="absolute inset-0 animated-gradient"></div>
+      <div className="absolute inset-0 animated-gradient-overlay"></div>
       
       {/* 3D floating elements */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-blue-200/40 to-cyan-300/50 rounded-full blur-3xl animate-bounce [animation-duration:6s]"></div>

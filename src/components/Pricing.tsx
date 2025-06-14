@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
 const b2cService = {
   name: "Complete Care",
   price: "Bespoke",
@@ -7,12 +8,14 @@ const b2cService = {
   features: ["Precision clinic matching", "Professional language facilitation", "Luxury travel coordination", "Seamless procedure management", "Comprehensive post-care support", "Cultural integration services", "24/7 dedicated concierge"],
   popular: true
 };
+
 const b2bService = {
   name: "Strategic Partnership",
   price: "Let's Connect",
   description: "For healthcare institutions",
   features: ["Global market expansion strategy", "International client acquisition", "Premium brand positioning", "Cultural adaptation expertise", "Sophisticated marketing campaigns", "Long-term partnership development", "Advanced analytics & insights"]
 };
+
 const Pricing = () => {
   const handleEmailContact = (subject: string) => {
     const emailBody = `Hello Kimio team,
@@ -25,10 +28,12 @@ Best regards`;
     const mailtoLink = `mailto:info@cpventures.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
     window.location.href = mailtoLink;
   };
+
   return (
-    <section className="py-32 px-6 relative bg-gradient-to-b from-purple-50/20 via-gray-50 to-blue-50/30 overflow-hidden">
-      {/* Background effects */}
-      <div className="absolute inset-0 bg-gradient-to-r from-teal-100/20 via-blue-100/30 to-purple-100/20 animate-pulse"></div>
+    <section className="py-32 px-6 relative overflow-hidden">
+      {/* Animated gradient backgrounds */}
+      <div className="absolute inset-0 animated-gradient"></div>
+      <div className="absolute inset-0 animated-gradient-overlay"></div>
       
       {/* 3D floating elements */}
       <div className="absolute top-1/5 left-1/5 w-72 h-72 bg-gradient-to-br from-teal-200/30 to-cyan-300/40 rounded-full blur-3xl animate-bounce [animation-duration:10s]"></div>
@@ -120,4 +125,5 @@ Best regards`;
     </section>
   );
 };
+
 export default Pricing;

@@ -1,11 +1,11 @@
-
 import { Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="py-20 px-6 relative bg-gradient-to-br from-gray-100 via-blue-50 to-purple-50 overflow-hidden">
-      {/* Enhanced background effects */}
-      <div className="absolute inset-0 bg-gradient-to-r from-cyan-100/20 via-purple-100/30 to-teal-100/20 animate-pulse"></div>
+    <footer className="py-20 px-6 relative overflow-hidden">
+      {/* Animated gradient backgrounds */}
+      <div className="absolute inset-0 animated-gradient"></div>
+      <div className="absolute inset-0 animated-gradient-overlay"></div>
       
       {/* 3D floating elements */}
       <div className="absolute top-1/4 left-1/5 w-40 h-40 bg-gradient-to-br from-cyan-200/30 to-blue-300/40 rounded-full blur-3xl animate-bounce [animation-duration:10s]"></div>

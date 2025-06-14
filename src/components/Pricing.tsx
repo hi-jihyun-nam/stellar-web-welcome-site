@@ -50,13 +50,13 @@ const services = [
 
 const Pricing = () => {
   return (
-    <section className="py-24 px-6 relative">
+    <section className="py-24 px-6 relative bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
             Our Services
           </h2>
-          <p className="text-xl text-white/70 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We help customers make confident choices and help clinics communicate their true value.
           </p>
         </div>
@@ -67,31 +67,31 @@ const Pricing = () => {
               key={index}
               className={`relative p-8 rounded-2xl border transition-all duration-300 hover:scale-105 ${
                 service.popular
-                  ? "bg-gradient-to-b from-teal-600/20 to-cyan-600/20 border-teal-500/50 shadow-xl shadow-teal-500/25"
-                  : "bg-white/5 border-white/10 hover:bg-white/10 hover:border-teal-500/30"
+                  ? "bg-white border-teal-300 shadow-xl shadow-teal-200"
+                  : "bg-white border-gray-200 hover:border-teal-300"
               }`}
             >
               {service.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+                  <span className="bg-teal-600 text-white px-4 py-2 rounded-full text-sm font-medium">
                     Most Popular
                   </span>
                 </div>
               )}
 
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-white mb-2">{service.name}</h3>
-                <div className="text-4xl font-bold text-white mb-2">
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">{service.name}</h3>
+                <div className="text-4xl font-bold text-gray-800 mb-2">
                   {service.price}
                 </div>
-                <p className="text-white/70">{service.description}</p>
+                <p className="text-gray-600">{service.description}</p>
               </div>
 
               <ul className="space-y-4 mb-8">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
-                    <span className="text-white/80">{feature}</span>
+                    <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -99,8 +99,8 @@ const Pricing = () => {
               <Button
                 className={`w-full py-3 rounded-lg transition-all duration-300 ${
                   service.popular
-                    ? "bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white"
-                    : "bg-white/10 hover:bg-white/20 text-white border border-white/20"
+                    ? "bg-teal-600 hover:bg-teal-700 text-white"
+                    : "bg-gray-100 hover:bg-gray-200 text-gray-800 border border-gray-300"
                 }`}
               >
                 {service.price === "Contact Us" ? "Get In Touch" : "Get Started"}

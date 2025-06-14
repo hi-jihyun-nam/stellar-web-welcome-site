@@ -27,13 +27,13 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-24 px-6 relative">
+    <section className="py-24 px-6 relative bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
             Real Stories, Real Trust
           </h2>
-          <p className="text-xl text-white/70 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We believe that marketing is not about moving numbers. It is about moving people.
           </p>
         </div>
@@ -42,29 +42,29 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="group p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:border-teal-500/50"
+              className="group p-8 bg-gray-50 border border-gray-200 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:border-teal-300"
             >
               <div className="flex items-center gap-1 mb-6">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-teal-400 fill-current" />
+                  <Star key={i} className="w-5 h-5 text-teal-500 fill-current" />
                 ))}
               </div>
               
-              <p className="text-white/80 text-lg leading-relaxed mb-6">
+              <p className="text-gray-700 text-lg leading-relaxed mb-6">
                 "{testimonial.content}"
               </p>
               
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-teal-600 to-cyan-600 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center">
                   <span className="text-white font-semibold">
                     {testimonial.avatar}
                   </span>
                 </div>
                 <div>
-                  <div className="text-white font-semibold">
+                  <div className="text-gray-800 font-semibold">
                     {testimonial.name}
                   </div>
-                  <div className="text-white/60">
+                  <div className="text-gray-600">
                     {testimonial.role}
                   </div>
                 </div>

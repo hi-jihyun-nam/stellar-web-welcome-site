@@ -113,4 +113,30 @@
   .cursor-magnetic {
     transition: transform 0.1s ease;
   }
+  
+  /* Text selection effects */
+  ::selection {
+    background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+    color: white;
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  }
+  
+  ::-moz-selection {
+    background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+    color: white;
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  }
+  
+  /* Enhanced text selection with glow effect */
+  .text-selectable {
+    user-select: text;
+  }
+  
+  .text-selectable::selection {
+    background: rgba(59, 130, 246, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+  }
 }
+

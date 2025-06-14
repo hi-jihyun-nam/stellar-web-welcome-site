@@ -26,13 +26,13 @@ const Footer = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
-          {/* Brand Section */}
-          <div>
+          {/* Brand Section with Slogan */}
+          <div className="text-selectable">
             <h3 className="text-4xl font-bold text-gray-900 mb-8">Kimio</h3>
-            <div className="flex items-center gap-3 mb-8">
-              <span className="text-blue-600 font-bold text-lg">Clinic & People</span>
-              <span className="text-gray-400">|</span>
-              <span className="text-purple-600 font-bold text-lg">Crowd & Person</span>
+            <div className="mb-8">
+              <p className="text-2xl font-semibold text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
+                "Connecting Hearts, Healing Lives"
+              </p>
             </div>
             <p className="text-gray-600 mb-8 max-w-lg leading-relaxed font-light text-lg">
               We connect Korea's premier medical institutions and aesthetic clinics with the global community, 
@@ -40,45 +40,24 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Contact Information */}
+          {/* Simplified Contact Information */}
           <div className="bg-white/60 backdrop-blur-xl p-8 rounded-3xl border border-gray-200/50 shadow-lg">
-            <h4 className="text-gray-900 font-bold mb-8 text-2xl">Contact Information</h4>
+            <h4 className="text-gray-900 font-bold mb-6 text-xl">Quick Contact</h4>
             
-            <div className="space-y-6">
-              <div className="flex items-center gap-4 p-4 rounded-2xl bg-gray-50/50 hover:bg-gray-100/50 transition-all duration-300">
-                <div className="w-8 h-8 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-lg flex items-center justify-center shadow-lg">
-                  <Mail className="w-4 h-4 text-white" />
-                </div>
-                <div>
-                  <h5 className="font-semibold text-gray-900 mb-1 text-lg">Email</h5>
-                  <p className="text-blue-600 font-medium">info@cpventures.com</p>
-                </div>
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <Mail className="w-5 h-5 text-blue-600" />
+                <span className="text-gray-700 font-medium">info@cpventures.com</span>
               </div>
 
-              <div className="flex items-center gap-4 p-4 rounded-2xl bg-gray-50/50 hover:bg-gray-100/50 transition-all duration-300">
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg flex items-center justify-center shadow-lg">
-                  <Phone className="w-4 h-4 text-white" />
-                </div>
-                <div>
-                  <h5 className="font-semibold text-gray-900 mb-1 text-lg">Phone</h5>
-                  <p className="text-purple-600 font-medium">+82 2-1234-5678</p>
-                </div>
+              <div className="flex items-center gap-3">
+                <Phone className="w-5 h-5 text-purple-600" />
+                <span className="text-gray-700 font-medium">+82 2-1234-5678</span>
               </div>
 
-              <div className="flex items-center gap-4 p-4 rounded-2xl bg-gray-50/50 hover:bg-gray-100/50 transition-all duration-300">
-                <div className="w-8 h-8 bg-gradient-to-br from-rose-400 to-pink-500 rounded-lg flex items-center justify-center shadow-lg">
-                  <MapPin className="w-4 h-4 text-white" />
-                </div>
-                <div>
-                  <h5 className="font-semibold text-gray-900 mb-1 text-lg">Location</h5>
-                  <p className="text-pink-600 font-medium">Seoul, South Korea</p>
-                </div>
-              </div>
-
-              <div className="mt-8 p-4 rounded-2xl bg-gradient-to-r from-blue-100/50 to-purple-100/50 border border-blue-200/30">
-                <p className="text-gray-900 font-medium text-center">
-                  Global support available 24/7
-                </p>
+              <div className="flex items-center gap-3">
+                <MapPin className="w-5 h-5 text-pink-600" />
+                <span className="text-gray-700 font-medium">Seoul, South Korea</span>
               </div>
             </div>
           </div>
@@ -86,7 +65,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="pt-8 border-t border-gray-300/50 text-center">
-          <p className="text-gray-600 font-light text-lg">
+          <p className="text-gray-600 font-light text-lg text-selectable">
             © 2024 Kimio. Crafting connections that transform lives.
           </p>
         </div>
@@ -96,3 +75,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

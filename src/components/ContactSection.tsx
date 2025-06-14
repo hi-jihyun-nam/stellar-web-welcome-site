@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -14,6 +15,7 @@ interface ContactFormData {
 
 const ContactSection = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const form = useForm<ContactFormData>({
     defaultValues: {
       name: "",
@@ -22,13 +24,37 @@ const ContactSection = () => {
     },
   });
 
-  const onSubmit = (data: ContactFormData) => {
+  const onSubmit = async (data: ContactFormData) => {
+    setIsSubmitting(true);
     console.log("Contact form submitted:", data);
-    toast({
-      title: "Message Sent!",
-      description: "We'll get back to you within 24 hours.",
-    });
-    form.reset();
+    
+    try {
+      // 실제 이메일 전송 로직
+      const emailBody = `
+Name: ${data.name}
+Email: ${data.email}
+Message: ${data.message}
+      `;
+      
+      // mailto 링크로 이메일 클라이언트 열기
+      const mailtoLink = `mailto:info@cpventures.com?subject=Contact from ${data.name}&body=${encodeURIComponent(emailBody)}`;
+      window.location.href = mailtoLink;
+      
+      toast({
+        title: "Email Client Opened!",
+        description: "Your default email client has been opened with the message.",
+      });
+      
+      form.reset();
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to open email client. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -54,10 +80,10 @@ const ContactSection = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight text-selectable">
             Get in Touch
           </h2>
-          <p className="text-xl text-gray-700 max-w-4xl mx-auto font-light leading-relaxed">
+          <p className="text-xl text-gray-700 max-w-4xl mx-auto font-light leading-relaxed text-selectable">
             Connect with our expert team for personalized consultation and guidance.
           </p>
         </div>
@@ -124,9 +150,10 @@ const ContactSection = () => {
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-gradient-to-r from-blue-500 to-teal-600 hover:from-blue-600 hover:to-teal-700 text-white font-medium py-6 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl"
+                  disabled={isSubmitting}
+                  className="w-full bg-gradient-to-r from-blue-500 to-teal-600 hover:from-blue-600 hover:to-teal-700 text-white font-medium py-6 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl disabled:opacity-50"
                 >
-                  Send Message
+                  {isSubmitting ? "Opening Email..." : "Send Message"}
                 </Button>
               </form>
             </Form>
@@ -138,3 +165,4 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
+

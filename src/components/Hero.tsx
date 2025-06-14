@@ -48,7 +48,7 @@ const Hero = () => {
         <div className="mb-16 animate-fade-in">
           <div className="flex items-center justify-center gap-4 mb-4">
             <div className="text-lg text-blue-600 font-bold">Kimio</div>
-            <div className="text-lg text-gray-500 font-bold italic">Beyond Reach. Into Relevance</div>
+            <div className="text-lg text-gray-500 font-bold italic">Keen to Trends, True to Aesthetic.</div>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight drop-shadow-sm">
             Global Healthcare
@@ -58,7 +58,7 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
-            We provide innovative services that connect Korea's premier medical institutions and aesthetic clinics with the world.
+            We provide innovative services that connect Korea's premier medical institutions and aesthetic clinics with the world. With a keen understanding of global trends and a dedication to aesthetic refinement, we craft services that resonate with today's global audience.
           </p>
         </div>
 

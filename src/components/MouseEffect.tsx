@@ -6,7 +6,7 @@ const MouseEffect = () => {
 
   return (
     <>
-      {/* Main cursor */}
+      {/* Main cursor - 크기 줄이고 색상 변경 */}
       <div
         className="fixed pointer-events-none z-50 mix-blend-difference"
         style={{
@@ -16,13 +16,13 @@ const MouseEffect = () => {
         }}
       >
         <div
-          className={`w-6 h-6 bg-white rounded-full transition-all duration-150 ${
-            isMoving ? 'scale-125' : 'scale-100'
+          className={`w-3 h-3 bg-indigo-600 rounded-full transition-all duration-200 ${
+            isMoving ? 'scale-150' : 'scale-100'
           }`}
         />
       </div>
 
-      {/* Trailing circles */}
+      {/* Trailing circles - 크기 줄이고 애니메이션 속도 늦춤 */}
       <div
         className="fixed pointer-events-none z-40"
         style={{
@@ -31,7 +31,7 @@ const MouseEffect = () => {
           transform: 'translate(-50%, -50%)',
         }}
       >
-        <div className="w-8 h-8 bg-blue-400/30 rounded-full animate-ping" />
+        <div className="w-5 h-5 bg-indigo-400/20 rounded-full animate-ping [animation-duration:3s]" />
       </div>
 
       <div
@@ -42,7 +42,7 @@ const MouseEffect = () => {
           transform: 'translate(-50%, -50%)',
         }}
       >
-        <div className="w-12 h-12 bg-purple-400/20 rounded-full animate-pulse" />
+        <div className="w-8 h-8 bg-purple-400/15 rounded-full animate-pulse [animation-duration:4s]" />
       </div>
     </>
   );

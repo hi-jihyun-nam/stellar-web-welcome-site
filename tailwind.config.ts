@@ -22,6 +22,7 @@ export default {
 				'inter': ['Inter', 'sans-serif'],
 				'sans': ['Inter', 'sans-serif'],
 				'boldonse': ['Playfair Display', 'serif'],
+				'poppins': ['Poppins', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

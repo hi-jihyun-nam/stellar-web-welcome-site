@@ -5,7 +5,7 @@ import AnimatedCounter from "./AnimatedCounter";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden">
       {/* Enhanced 3D Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50"></div>
       
@@ -37,20 +37,20 @@ const Hero = () => {
         <div className="absolute bottom-20 right-20 w-2 h-2 bg-pink-400 rounded-full animate-ping [animation-duration:6s]"></div>
       </div>
       
-      <div className="relative z-10 text-center max-w-7xl mx-auto">
+      <div className="relative z-10 text-center max-w-7xl mx-auto py-16">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-6 py-3 bg-white/80 backdrop-blur-md border border-gray-200/50 rounded-full mb-12 animate-fade-in shadow-lg hover:shadow-xl transition-all duration-300">
+        <div className="inline-flex items-center gap-2 px-6 py-3 bg-white/80 backdrop-blur-md border border-gray-200/50 rounded-full mb-16 animate-fade-in shadow-lg hover:shadow-xl transition-all duration-300">
           <Globe className="w-5 h-5 text-blue-600" />
           <span className="text-base font-medium text-gray-700">Bridging Korea with the World</span>
         </div>
 
         {/* Main Title */}
-        <div className="mb-16 animate-fade-in">
-          <div className="flex items-center justify-center gap-2 mb-4">
+        <div className="mb-20 animate-fade-in">
+          <div className="flex items-center justify-center gap-2 mb-6">
             <div className="text-lg text-blue-600 font-bold">Kimio</div>
             <div className="text-sm text-gray-500 font-medium italic">Keen to Trends, True to Aesthetic.</div>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight drop-shadow-sm">
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 tracking-tight drop-shadow-sm">
             Global Healthcare
             <br />
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent">
@@ -59,7 +59,7 @@ const Hero = () => {
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-6xl mx-auto leading-relaxed font-light px-4 sm:px-6 md:px-8">
             We provide innovative services that connect Korea's premier medical institutions and aesthetic clinics with the world. 
-            <span className="block mt-2 sm:mt-3 md:mt-4">
+            <span className="block mt-4 sm:mt-5 md:mt-6">
               With a keen understanding of global trends and a dedication to aesthetic refinement, we craft services that resonate with today's global audience.
             </span>
           </p>

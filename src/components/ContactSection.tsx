@@ -32,7 +32,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="py-32 px-6 relative bg-gradient-to-b from-purple-50/20 via-gray-50 to-blue-50/30 overflow-hidden">
+    <section id="contact-section" className="py-32 px-6 relative bg-gradient-to-b from-purple-50/20 via-gray-50 to-blue-50/30 overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-to-r from-green-100/20 via-teal-100/30 to-cyan-100/20 animate-pulse"></div>
       

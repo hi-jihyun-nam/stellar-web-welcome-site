@@ -1,4 +1,3 @@
-
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -34,6 +33,13 @@ const b2bService = {
 };
 
 const Pricing = () => {
+  const scrollToContact = () => {
+    const contactSection = document.querySelector('#contact-section');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-32 px-6 relative bg-gradient-to-b from-purple-50/20 via-gray-50 to-blue-50/30 overflow-hidden">
       {/* Background effects */}
@@ -73,12 +79,7 @@ const Pricing = () => {
               <h3 className="text-3xl font-bold text-gray-900 mb-4">For Individuals</h3>
               <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-cyan-600 mx-auto rounded-full shadow-lg"></div>
             </div>
-            <div className="relative p-8 rounded-3xl transition-all duration-500 hover:scale-105 shadow-lg bg-white/80 backdrop-blur-xl border border-gray-200/50 hover:border-cyan-300/60 hover:shadow-xl hover:shadow-cyan-200/20 ring-2 ring-cyan-400/50">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <span className="bg-gradient-to-r from-cyan-500 to-cyan-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                  Most Popular
-                </span>
-              </div>
+            <div className="relative p-8 rounded-3xl transition-all duration-500 hover:scale-105 hover:bg-cyan-50/50 shadow-lg bg-white/80 backdrop-blur-xl border border-gray-200/50 hover:border-cyan-300/60 hover:shadow-xl hover:shadow-cyan-200/20">
               <div className="text-center mb-8">
                 <h4 className="text-2xl font-bold text-gray-900 mb-3">{b2cService.name}</h4>
                 <div className="text-4xl font-bold text-cyan-600 mb-3">
@@ -97,6 +98,7 @@ const Pricing = () => {
               </ul>
 
               <Button
+                onClick={scrollToContact}
                 className="w-full py-3 rounded-xl font-semibold transition-all duration-300 bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white border-0 shadow-lg hover:shadow-xl"
               >
                 Begin Journey
@@ -110,7 +112,7 @@ const Pricing = () => {
               <h3 className="text-3xl font-bold text-gray-900 mb-4">For Healthcare Institutions</h3>
               <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-purple-600 mx-auto rounded-full shadow-lg"></div>
             </div>
-            <div className="relative p-8 rounded-3xl transition-all duration-500 hover:scale-105 shadow-lg bg-white/80 backdrop-blur-xl border border-gray-200/50 hover:border-purple-300/60 hover:shadow-xl hover:shadow-purple-200/20">
+            <div className="relative p-8 rounded-3xl transition-all duration-500 hover:scale-105 hover:bg-purple-50/50 shadow-lg bg-white/80 backdrop-blur-xl border border-gray-200/50 hover:border-purple-300/60 hover:shadow-xl hover:shadow-purple-200/20">
               <div className="text-center mb-8">
                 <h4 className="text-2xl font-bold text-gray-900 mb-3">{b2bService.name}</h4>
                 <div className="text-4xl font-bold text-purple-600 mb-3">
@@ -129,6 +131,7 @@ const Pricing = () => {
               </ul>
 
               <Button
+                onClick={scrollToContact}
                 className="w-full py-3 rounded-xl font-semibold transition-all duration-300 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl"
               >
                 Start Partnership

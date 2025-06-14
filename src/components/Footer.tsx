@@ -62,7 +62,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="pt-8 border-t border-gray-300/50 text-center">
           <p className="text-gray-600 font-light text-lg text-selectable">
-            © 2024 Kimio. Crafting connections that transform lives.
+            © 2024 Kimio. All rights reserved.
           </p>
         </div>
       </div>

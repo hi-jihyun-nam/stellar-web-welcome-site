@@ -1,3 +1,4 @@
+
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -33,11 +34,17 @@ const b2bService = {
 };
 
 const Pricing = () => {
-  const scrollToContact = () => {
-    const contactSection = document.querySelector('#contact-section');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleEmailContact = (subject: string) => {
+    const emailBody = `Hello Kimio team,
+
+I'm interested in learning more about your ${subject} service.
+
+Please contact me to discuss how we can work together.
+
+Best regards`;
+    
+    const mailtoLink = `mailto:info@cpventures.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -98,7 +105,7 @@ const Pricing = () => {
               </ul>
 
               <Button
-                onClick={scrollToContact}
+                onClick={() => handleEmailContact("Complete Care Service")}
                 className="w-full py-3 rounded-xl font-semibold transition-all duration-300 bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white border-0 shadow-lg hover:shadow-xl"
               >
                 Begin Journey
@@ -131,7 +138,7 @@ const Pricing = () => {
               </ul>
 
               <Button
-                onClick={scrollToContact}
+                onClick={() => handleEmailContact("Strategic Partnership Service")}
                 className="w-full py-3 rounded-xl font-semibold transition-all duration-300 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl"
               >
                 Start Partnership

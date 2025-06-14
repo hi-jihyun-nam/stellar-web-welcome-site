@@ -67,13 +67,13 @@ const Pricing = () => {
               key={index}
               className={`relative p-8 rounded-2xl border transition-all duration-300 hover:scale-105 ${
                 service.popular
-                  ? "bg-gradient-to-b from-yellow-600/20 to-amber-600/20 border-yellow-500/50 shadow-xl shadow-yellow-500/25"
-                  : "bg-white/5 border-white/10 hover:bg-white/10 hover:border-yellow-500/30"
+                  ? "bg-gradient-to-b from-cyan-600/20 to-blue-600/20 border-cyan-500/50 shadow-xl shadow-cyan-500/25"
+                  : "bg-white/5 border-white/10 hover:bg-white/10 hover:border-cyan-500/30"
               }`}
             >
               {service.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-gradient-to-r from-yellow-600 to-amber-600 text-navy-900 px-4 py-2 rounded-full text-sm font-medium">
+                  <span className="bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">
                     Most Popular
                   </span>
                 </div>
@@ -99,7 +99,7 @@ const Pricing = () => {
               <Button
                 className={`w-full py-3 rounded-lg transition-all duration-300 ${
                   service.popular
-                    ? "bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-700 hover:to-amber-700 text-navy-900"
+                    ? "bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white"
                     : "bg-white/10 hover:bg-white/20 text-white border border-white/20"
                 }`}
               >

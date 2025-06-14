@@ -42,11 +42,11 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="group p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:border-yellow-500/50"
+              className="group p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:border-cyan-500/50"
             >
               <div className="flex items-center gap-1 mb-6">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                  <Star key={i} className="w-5 h-5 text-cyan-400 fill-current" />
                 ))}
               </div>
               
@@ -55,8 +55,8 @@ const Testimonials = () => {
               </p>
               
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-yellow-600 to-amber-600 rounded-full flex items-center justify-center">
-                  <span className="text-navy-900 font-semibold">
+                <div className="w-12 h-12 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-full flex items-center justify-center">
+                  <span className="text-white font-semibold">
                     {testimonial.avatar}
                   </span>
                 </div>

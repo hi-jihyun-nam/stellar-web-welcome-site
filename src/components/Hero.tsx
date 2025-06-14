@@ -45,7 +45,7 @@ const Hero = () => {
         {/* Stats Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto animate-fade-in">
           <div className="bg-white/70 backdrop-blur-xl border border-gray-200/50 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 group">
-            <div className="text-4xl md:text-5xl font-bold text-purple-600 mb-3 group-hover:scale-105 transition-transform">
+            <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-3 group-hover:scale-105 transition-transform">
               <AnimatedCounter end={4.8} suffix="/5" className="inline" />
             </div>
             <div className="text-gray-700 font-medium text-lg">Average Score</div>
@@ -53,13 +53,13 @@ const Hero = () => {
           </div>
 
           <div className="bg-white/70 backdrop-blur-xl border border-gray-200/50 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 group">
-            <AnimatedCounter end={50} suffix="+" className="text-4xl md:text-5xl font-bold text-purple-600 mb-3 group-hover:scale-105 transition-transform" />
+            <AnimatedCounter end={50} suffix="+" className="text-4xl md:text-5xl font-bold text-blue-600 mb-3 group-hover:scale-105 transition-transform" />
             <div className="text-gray-700 font-medium text-lg">Countries Served</div>
             <div className="text-gray-500 text-sm mt-2">Service Coverage Countries</div>
           </div>
 
           <div className="bg-white/70 backdrop-blur-xl border border-gray-200/50 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 group">
-            <div className="text-4xl md:text-5xl font-bold text-purple-600 mb-3 group-hover:scale-105 transition-transform">
+            <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-3 group-hover:scale-105 transition-transform">
               <AnimatedCounter end={24} suffix="/7" className="inline" />
             </div>
             <div className="text-gray-700 font-medium text-lg">Global Support</div>

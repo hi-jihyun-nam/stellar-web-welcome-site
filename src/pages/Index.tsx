@@ -7,10 +7,12 @@ import HowWeConnect from "@/components/HowWeConnect";
 import Pricing from "@/components/Pricing";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import MouseEffect from "@/components/MouseEffect";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50/50 via-white to-purple-50/30">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50/50 via-white to-purple-50/30 cursor-none">
+      <MouseEffect />
       <Header />
       <Hero />
       <Mission />
@@ -19,7 +21,7 @@ const Index = () => {
       <Pricing />
       <ContactSection />
       <Footer />
-    </div>
+    </div>    
   );
 };
 

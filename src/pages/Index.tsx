@@ -1,6 +1,7 @@
 
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Mission from "@/components/Mission";
 import Features from "@/components/Features";
 import HowWeConnect from "@/components/HowWeConnect";
 import Pricing from "@/components/Pricing";
@@ -13,6 +14,7 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50/50 via-white to-purple-50/30">
       <Header />
       <Hero />
+      <Mission />
       <Features />
       <HowWeConnect />
       <Pricing />

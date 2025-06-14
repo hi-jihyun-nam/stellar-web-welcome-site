@@ -1,8 +1,6 @@
 import { MessageCircle, Shield, Zap } from "lucide-react";
-
 const Philosophy = () => {
-  return (
-    <section className="py-32 px-6 relative bg-gradient-to-br from-gray-50 via-white to-blue-50/30 overflow-hidden">
+  return <section className="py-32 px-6 relative bg-gradient-to-br from-gray-50 via-white to-blue-50/30 overflow-hidden">
       {/* Animated gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-gray-100/30 via-blue-100/40 to-purple-100/30 animate-pulse"></div>
       
@@ -15,10 +13,10 @@ const Philosophy = () => {
         <svg width="100%" height="100%" className="absolute inset-0">
           <defs>
             <pattern id="grid-philosophy" width="50" height="50" patternUnits="userSpaceOnUse">
-              <path d="M 50 0 L 0 0 0 50" fill="none" stroke="currentColor" strokeWidth="1"/>
+              <path d="M 50 0 L 0 0 0 50" fill="none" stroke="currentColor" strokeWidth="1" />
             </pattern>
           </defs>
-          <rect width="100%" height="100%" fill="url(#grid-philosophy)" className="text-gray-300/30"/>
+          <rect width="100%" height="100%" fill="url(#grid-philosophy)" className="text-gray-300/30" />
         </svg>
       </div>
       
@@ -32,9 +30,7 @@ const Philosophy = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight drop-shadow-sm">
-            Our Philosophy
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight drop-shadow-sm">Philosophy</h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto font-light leading-relaxed">
             Marketing as the Art of Connection
           </p>
@@ -116,8 +112,6 @@ const Philosophy = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Philosophy;

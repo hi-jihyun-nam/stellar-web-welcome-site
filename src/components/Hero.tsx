@@ -1,11 +1,8 @@
-
 import { Sparkles, ArrowRight, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedCounter from "./AnimatedCounter";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 py-32 overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center px-6 py-32 overflow-hidden">
       {/* Enhanced 3D Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50"></div>
       
@@ -22,11 +19,9 @@ const Hero = () => {
         <div className="mb-20 animate-fade-in">
           {/* Bridging Korea with the World - positioned above main title */}
           <div className="mb-12 flex justify-center">
-            <div className="bg-white/80 backdrop-blur-md border border-gray-200/50 rounded-full px-8 py-4 shadow-lg flex items-center gap-3">
-              <Globe className="w-6 h-6 text-blue-600" />
-              <span className="text-lg font-medium text-gray-800">
-                Bridging Korea with the World
-              </span>
+            <div className="bg-white/80 backdrop-blur-md border border-gray-200/50 rounded-full shadow-lg flex items-center gap-3 px-[19px] py-[13px]">
+              <Globe className="w-5 h-5 text-blue-600" />
+              <span className="text-gray-800 font-semibold text-sm">Bridging Korea with the World</span>
             </div>
           </div>
 
@@ -37,7 +32,7 @@ const Hero = () => {
               Connection Hub
             </span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-6xl mx-auto leading-relaxed font-light px-4 sm:px-6 md:px-8">
+          <p className="text-lg sm:text-xl max-w-6xl mx-auto leading-relaxed px-4 sm:px-6 md:px-8 text-slate-500 font-medium md:text-2xl">
             We provide innovative services that connect Korea's premier medical institutions and aesthetic clinics with the world. 
             <span className="block mt-4 sm:mt-5 md:mt-6">
               With a keen understanding of global trends and a dedication to aesthetic refinement, we craft services that resonate with today's global audience.
@@ -54,11 +49,7 @@ const Hero = () => {
           </div>
 
           <div className="bg-white/70 backdrop-blur-xl border border-gray-200/50 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 group">
-            <AnimatedCounter 
-              end={50} 
-              suffix="+"
-              className="text-4xl md:text-5xl font-bold text-blue-600 mb-3 group-hover:scale-105 transition-transform"
-            />
+            <AnimatedCounter end={50} suffix="+" className="text-4xl md:text-5xl font-bold text-blue-600 mb-3 group-hover:scale-105 transition-transform" />
             <div className="text-gray-700 font-medium text-lg">Countries Served</div>
             <div className="text-gray-500 text-sm mt-2">Service Coverage Countries</div>
           </div>
@@ -70,8 +61,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;

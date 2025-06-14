@@ -1,36 +1,36 @@
 
-import { Zap, Shield, Rocket, Users, Globe, Star } from "lucide-react";
+import { Heart, Shield, Users, Globe, MessageCircle, Sparkles } from "lucide-react";
 
 const features = [
   {
-    icon: Zap,
-    title: "Lightning Fast",
-    description: "Experience blazing fast performance with our optimized infrastructure and cutting-edge technology."
+    icon: Heart,
+    title: "People-Centered Approach",
+    description: "We see clients as individuals with real stories, hopes, and concerns. Our connections are built on empathy and understanding, not just visibility."
+  },
+  {
+    icon: MessageCircle,
+    title: "Beyond Language Barriers",
+    description: "We bridge the gap in language, trust, and cultural understanding between Korean medical providers and international clients."
   },
   {
     icon: Shield,
-    title: "Enterprise Security",
-    description: "Bank-level security with end-to-end encryption to keep your data safe and protected."
-  },
-  {
-    icon: Rocket,
-    title: "Scale Effortlessly",
-    description: "Grow from startup to enterprise without worrying about infrastructure limitations."
+    title: "Trust & Safety First",
+    description: "We help clients access Korean medical and beauty services safely, with verified partners and transparent processes."
   },
   {
     icon: Users,
-    title: "Team Collaboration",
-    description: "Work together seamlessly with real-time collaboration tools and shared workspaces."
+    title: "Personalized Service Models",
+    description: "We develop customized service experiences that meet both client expectations and provider capabilities."
   },
   {
     icon: Globe,
-    title: "Global Reach",
-    description: "Deploy worldwide with our global CDN and multi-region infrastructure."
+    title: "Global Connector",
+    description: "We introduce Korea's top medical institutions, beauty clinics, and cosmetic brands to international markets."
   },
   {
-    icon: Star,
-    title: "Premium Support",
-    description: "Get expert help when you need it with our 24/7 premium support team."
+    icon: Sparkles,
+    title: "Meaningful Marketing",
+    description: "Marketing isn't about moving numbers—it's about moving people. We create connections that truly make a difference."
   }
 ];
 
@@ -40,10 +40,10 @@ const Features = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Powerful Features
+            How We Connect
           </h2>
           <p className="text-xl text-white/70 max-w-3xl mx-auto">
-            Everything you need to build, deploy, and scale your applications with confidence.
+            We don't see marketing as just exposure or advertising. We see it as the art of making the right connection.
           </p>
         </div>
 

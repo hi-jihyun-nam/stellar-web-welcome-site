@@ -3,25 +3,25 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
+    name: "Maria González",
+    role: "Client from Spain",
+    content: "C&P Ventures didn't just help me find a clinic—they understood my concerns and guided me through every step. The cultural bridge they provided was invaluable.",
+    rating: 5,
+    avatar: "MG"
+  },
+  {
+    name: "Dr. Kim Min-jun",
+    role: "Seoul Beauty Clinic",
+    content: "Working with C&P Ventures transformed how we connect with international patients. They truly understand both sides and create meaningful relationships.",
+    rating: 5,
+    avatar: "KM"
+  },
+  {
     name: "Sarah Johnson",
-    role: "CEO, TechStart",
-    content: "This platform transformed how we build and deploy applications. The performance improvements were immediate and remarkable.",
+    role: "Client from Canada",
+    content: "What impressed me most was their people-centered approach. They saw me as an individual, not just another client. The trust they built made all the difference.",
     rating: 5,
     avatar: "SJ"
-  },
-  {
-    name: "Michael Chen",
-    role: "Lead Developer, InnovateCorp",
-    content: "The best development experience I've had in years. Everything just works seamlessly, and the support team is incredible.",
-    rating: 5,
-    avatar: "MC"
-  },
-  {
-    name: "Emily Rodriguez",
-    role: "Product Manager, GrowthCo",
-    content: "We've seen a 300% increase in productivity since switching. The collaboration features are game-changing for our remote team.",
-    rating: 5,
-    avatar: "ER"
   }
 ];
 
@@ -31,10 +31,10 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Loved by Developers
+            Real Stories, Real Trust
           </h2>
           <p className="text-xl text-white/70 max-w-3xl mx-auto">
-            Join thousands of developers who trust our platform for their most important projects.
+            We believe that marketing is not about moving numbers. It is about moving people.
           </p>
         </div>
 

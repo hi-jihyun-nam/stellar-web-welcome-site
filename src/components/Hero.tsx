@@ -38,12 +38,6 @@ const Hero = () => {
       </div>
       
       <div className="relative z-10 text-center max-w-7xl mx-auto py-16">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-6 py-3 bg-white/80 backdrop-blur-md border border-gray-200/50 rounded-full mb-16 animate-fade-in shadow-lg hover:shadow-xl transition-all duration-300">
-          <Globe className="w-5 h-5 text-blue-600" />
-          <span className="text-base font-medium text-gray-700">Bridging Korea with the World</span>
-        </div>
-
         {/* Main Title */}
         <div className="mb-20 animate-fade-in">
           <div className="flex items-center justify-center gap-2 mb-6">

@@ -1,5 +1,4 @@
 
-
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
@@ -29,7 +28,32 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
           {/* Brand Section with Slogan */}
           <div className="text-selectable">
-            <h3 className="text-4xl font-bold text-gray-900 mb-8">Kimio</h3>
+            <div className="flex items-center gap-8 mb-8">
+              <h3 className="text-4xl font-bold text-gray-900">Kimio</h3>
+              
+              {/* Quick Contact - Made subtle */}
+              <div className="opacity-60 hover:opacity-80 transition-opacity duration-300">
+                <h4 className="text-gray-600 font-medium mb-3 text-sm">Quick Contact</h4>
+                
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <Mail className="w-3 h-3 text-gray-500" />
+                    <span className="text-gray-600 text-xs">info@cpventures.com</span>
+                  </div>
+
+                  <div className="flex items-center gap-2">
+                    <Phone className="w-3 h-3 text-gray-500" />
+                    <span className="text-gray-600 text-xs">+82 2-1234-5678</span>
+                  </div>
+
+                  <div className="flex items-start gap-2">
+                    <MapPin className="w-3 h-3 text-gray-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600 text-xs leading-tight">Di Tower, 15, Teheran-ro 82-gil, Gangnam-gu, Seoul, Republic of Korea</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
             <div className="mb-8">
               <p className="text-2xl font-semibold text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
                 Connecting Hearts, Healing Lives
@@ -41,27 +65,8 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Contact */}
-          <div className="bg-white/60 backdrop-blur-xl p-8 rounded-3xl border border-gray-200/50 shadow-lg">
-            <h4 className="text-gray-900 font-bold mb-6 text-xl">Quick Contact</h4>
-            
-            <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-blue-600" />
-                <span className="text-gray-700 font-medium">info@cpventures.com</span>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-purple-600" />
-                <span className="text-gray-700 font-medium">+82 2-1234-5678</span>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <MapPin className="w-5 h-5 text-pink-600" />
-                <span className="text-gray-700 font-medium">Di Tower, 15, Teheran-ro 82-gil, Gangnam-gu, Seoul, Republic of Korea</span>
-              </div>
-            </div>
-          </div>
+          {/* Empty space where the old Quick Contact card was */}
+          <div></div>
         </div>
 
         {/* Bottom Section */}
@@ -76,4 +81,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

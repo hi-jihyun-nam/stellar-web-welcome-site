@@ -57,8 +57,11 @@ const Hero = () => {
               Connection Hub
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
-            We provide innovative services that connect Korea's premier medical institutions and aesthetic clinics with the world. With a keen understanding of global trends and a dedication to aesthetic refinement, we craft services that resonate with today's global audience.
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-6xl mx-auto leading-relaxed font-light px-4 sm:px-6 md:px-8">
+            We provide innovative services that connect Korea's premier medical institutions and aesthetic clinics with the world. 
+            <span className="block mt-2 sm:mt-3 md:mt-4">
+              With a keen understanding of global trends and a dedication to aesthetic refinement, we craft services that resonate with today's global audience.
+            </span>
           </p>
         </div>
 

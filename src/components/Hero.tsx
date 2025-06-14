@@ -47,28 +47,37 @@ const Hero = () => {
         {/* Main Title */}
         <div className="mb-16 animate-fade-in">
           <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="text-lg text-blue-600 font-bold">Kimio</div>
-            <div className="text-lg text-gray-500 font-bold italic">Keen to Trends, True to Aesthetic.</div>
+            <div className="text-lg text-blue-600 font-bold animate-pulse">Kimio</div>
+            <div className="text-lg font-bold italic bg-gradient-to-r from-purple-600 via-pink-500 to-teal-500 bg-clip-text text-transparent animate-pulse [animation-delay:0.5s]">
+              Keen to Trends, True to Aesthetic.
+            </div>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight drop-shadow-sm">
-            Global Healthcare
+            <span className="inline-block animate-fade-in [animation-delay:0.2s]">Global</span>{" "}
+            <span className="inline-block animate-fade-in [animation-delay:0.4s] bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+              Healthcare
+            </span>
             <br />
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent animate-pulse [animation-delay:0.6s]">
               Connection Hub
             </span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-6xl mx-auto leading-relaxed font-light px-4 sm:px-6 md:px-8">
-            We provide innovative services that connect Korea's premier medical institutions and aesthetic clinics with the world. 
-            <span className="block mt-2 sm:mt-3 md:mt-4">
+          <div className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-6xl mx-auto leading-relaxed font-light px-4 sm:px-6 md:px-8">
+            <span className="inline-block animate-fade-in [animation-delay:0.8s] bg-gradient-to-r from-gray-700 to-gray-600 bg-clip-text text-transparent">
+              We provide innovative services that connect Korea's premier medical institutions and aesthetic clinics with the world.
+            </span>
+            <span className="block mt-2 sm:mt-3 md:mt-4 animate-fade-in [animation-delay:1s] bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent">
               With a keen understanding of global trends and a dedication to aesthetic refinement, we craft services that resonate with today's global audience.
             </span>
-          </p>
+          </div>
         </div>
 
         {/* Stats Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto animate-fade-in">
           <div className="bg-white/70 backdrop-blur-xl border border-gray-200/50 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 group">
-            <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-3 group-hover:scale-105 transition-transform">4.8/5</div>
+            <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent mb-3 group-hover:scale-105 transition-transform animate-pulse">
+              4.8/5
+            </div>
             <div className="text-gray-700 font-medium text-lg">Average Satisfaction Score</div>
             <div className="text-gray-500 text-sm mt-2">User Satisfaction</div>
           </div>
@@ -77,14 +86,16 @@ const Hero = () => {
             <AnimatedCounter 
               end={50} 
               suffix="+"
-              className="text-4xl md:text-5xl font-bold text-blue-600 mb-3 group-hover:scale-105 transition-transform"
+              className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent mb-3 group-hover:scale-105 transition-transform"
             />
             <div className="text-gray-700 font-medium text-lg">Countries Served</div>
             <div className="text-gray-500 text-sm mt-2">Service Coverage Countries</div>
           </div>
 
           <div className="bg-white/70 backdrop-blur-xl border border-gray-200/50 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 group">
-            <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-3 group-hover:scale-105 transition-transform animate-pulse">24/7</div>
+            <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-teal-600 to-green-500 bg-clip-text text-transparent mb-3 group-hover:scale-105 transition-transform animate-pulse">
+              24/7
+            </div>
             <div className="text-gray-700 font-medium text-lg">Global Support</div>
             <div className="text-gray-500 text-sm mt-2">Global Support Service</div>
           </div>

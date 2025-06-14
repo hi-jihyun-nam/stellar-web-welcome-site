@@ -59,8 +59,8 @@ const Philosophy = () => {
           <div className="bg-white/80 backdrop-blur-sm border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
             <div className="flex items-start space-x-6">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
-                  <MessageCircle className="w-6 h-6 text-white" />
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg">
+                  <MessageCircle className="w-8 h-8 text-white" />
                 </div>
               </div>
               <div>
@@ -77,8 +77,8 @@ const Philosophy = () => {
           <div className="bg-white/80 backdrop-blur-sm border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
             <div className="flex items-start space-x-6">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
-                  <Shield className="w-6 h-6 text-white" />
+                <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center shadow-lg">
+                  <Shield className="w-8 h-8 text-white" />
                 </div>
               </div>
               <div>
@@ -95,8 +95,8 @@ const Philosophy = () => {
           <div className="bg-white/80 backdrop-blur-sm border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
             <div className="flex items-start space-x-6">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center">
-                  <Zap className="w-6 h-6 text-white" />
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
+                  <Zap className="w-8 h-8 text-white" />
                 </div>
               </div>
               <div>

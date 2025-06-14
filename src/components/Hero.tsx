@@ -17,18 +17,6 @@ const Hero = () => {
       <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-gradient-to-br from-purple-200/50 to-pink-200/40 rounded-full blur-2xl animate-bounce [animation-duration:8s] [animation-delay:2s]"></div>
       <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-gradient-to-br from-teal-200/40 to-cyan-200/50 rounded-full blur-2xl animate-bounce [animation-duration:7s] [animation-delay:4s]"></div>
       
-      {/* Grid pattern overlay */}
-      <div className="absolute inset-0 opacity-5">
-        <svg width="100%" height="100%" className="absolute inset-0">
-          <defs>
-            <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-              <path d="M 50 0 L 0 0 0 50" fill="none" stroke="currentColor" strokeWidth="1"/>
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#grid)" className="text-gray-300/30"/>
-        </svg>
-      </div>
-      
       <div className="relative z-10 text-center max-w-7xl mx-auto py-16">
         {/* Main Title */}
         <div className="mb-20 animate-fade-in">
@@ -39,6 +27,9 @@ const Hero = () => {
               Connection Hub
             </span>
           </h1>
+          <p className="text-2xl md:text-3xl text-gray-700 mb-8 font-light">
+            Bridging Korea with the world
+          </p>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-6xl mx-auto leading-relaxed font-light px-4 sm:px-6 md:px-8">
             We provide innovative services that connect Korea's premier medical institutions and aesthetic clinics with the world. 
             <span className="block mt-4 sm:mt-5 md:mt-6">

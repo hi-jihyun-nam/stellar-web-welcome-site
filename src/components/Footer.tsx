@@ -1,3 +1,4 @@
+
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
@@ -28,7 +29,7 @@ const Footer = () => {
           {/* Brand Section with Slogan */}
           <div className="text-selectable">
             <div className="flex items-center gap-8 mb-8">
-              <h3 className="text-4xl font-bold text-gray-900">Kimio</h3>
+              <h3 className="text-4xl font-bold text-gray-900">Kimco</h3>
               
               {/* Quick Contact - Made subtle */}
               <div className="opacity-60 hover:opacity-80 transition-opacity duration-300">
@@ -71,7 +72,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="pt-8 border-t border-gray-300/50 text-center">
           <p className="text-gray-600 font-light text-lg text-selectable">
-            © 2024 Kimio. Crafting connections that transform lives.
+            © 2024 Kimco. Crafting connections that transform lives.
           </p>
         </div>
       </div>

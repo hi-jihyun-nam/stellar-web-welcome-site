@@ -8,9 +8,6 @@ const Header = () => {
             <h1 className="text-2xl font-bold text-gray-900">
               Kimio
             </h1>
-            <span className="ml-3 text-sm text-blue-600 font-medium">
-              Clinic & People
-            </span>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">

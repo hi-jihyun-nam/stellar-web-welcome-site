@@ -46,6 +46,7 @@ const Hero = () => {
 
         {/* Main Title */}
         <div className="mb-16 animate-fade-in">
+          <div className="text-lg text-gray-500 font-light mb-4">Kimio</div>
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight drop-shadow-sm">
             Global Healthcare
             <br />

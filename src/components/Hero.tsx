@@ -5,7 +5,7 @@ import AnimatedCounter from "./AnimatedCounter";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden pt-20">
+    <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
       {/* Enhanced 3D Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900"></div>
       
@@ -54,9 +54,7 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto leading-relaxed font-light drop-shadow-lg">
-            We provide innovative services that connect Korea's premier medical institutions
-            <br className="hidden md:block" />
-            and aesthetic clinics with the world.
+            We provide innovative services that connect Korea's premier medical institutions and aesthetic clinics with the world.
           </p>
         </div>
 

@@ -1,4 +1,5 @@
 
+
 import { Heart, MessageCircle, Shield, Users2, Globe, Star } from "lucide-react";
 
 const connectionPoints = [
@@ -24,6 +25,18 @@ const connectionPoints = [
     icon: Star,
     title: "Meaningful Marketing",
     description: "Marketing isn't about moving numbers—it's about moving people. We create connections that truly make a difference.",
+    color: "from-teal-400 to-cyan-500"
+  },
+  {
+    icon: Heart,
+    title: "People-Centered Approach",
+    description: "We see clients as individuals with real stories, hopes, and concerns. Our connections are built on empathy and understanding.",
+    color: "from-teal-400 to-cyan-500"
+  },
+  {
+    icon: MessageCircle,
+    title: "Beyond Language Barriers",
+    description: "We bridge the gap in language, trust, and cultural understanding between Korean medical providers and international clients.",
     color: "from-teal-400 to-cyan-500"
   }
 ];
@@ -57,7 +70,7 @@ const HowWeConnect = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {connectionPoints.map((point, index) => (
             <div
               key={index}
@@ -81,3 +94,4 @@ const HowWeConnect = () => {
 };
 
 export default HowWeConnect;
+

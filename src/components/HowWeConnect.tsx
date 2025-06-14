@@ -1,19 +1,7 @@
 
-import { Heart, MessageCircle, Shield, Users2 } from "lucide-react";
+import { Heart, MessageCircle, Shield, Users2, Globe, Star } from "lucide-react";
 
 const connectionPoints = [
-  {
-    icon: Heart,
-    title: "People-Centered Approach",
-    description: "We see clients as individuals with real stories, hopes, and concerns. Our connections are built on empathy and understanding, not just visibility.",
-    color: "from-teal-400 to-cyan-500"
-  },
-  {
-    icon: MessageCircle,
-    title: "Beyond Language Barriers",
-    description: "We bridge the gap in language, trust, and cultural understanding between Korean medical providers and international clients.",
-    color: "from-teal-400 to-cyan-500"
-  },
   {
     icon: Shield,
     title: "Trust & Safety First",
@@ -24,6 +12,18 @@ const connectionPoints = [
     icon: Users2,
     title: "Personalized Service Models",
     description: "We develop customized service experiences that meet both client expectations and provider capabilities.",
+    color: "from-teal-400 to-cyan-500"
+  },
+  {
+    icon: Globe,
+    title: "Global Connector",
+    description: "We introduce Korea's top medical institutions, beauty clinics, and cosmetic brands to international markets.",
+    color: "from-teal-400 to-cyan-500"
+  },
+  {
+    icon: Star,
+    title: "Meaningful Marketing",
+    description: "Marketing isn't about moving numbers—it's about moving people. We create connections that truly make a difference.",
     color: "from-teal-400 to-cyan-500"
   }
 ];

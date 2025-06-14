@@ -47,8 +47,8 @@ const Footer = () => {
             
             <div className="space-y-6">
               <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 hover:bg-white/10 transition-all duration-300">
-                <div className="w-14 h-14 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg">
-                  <Mail className="w-7 h-7 text-white" />
+                <div className="w-8 h-8 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-lg flex items-center justify-center shadow-lg">
+                  <Mail className="w-4 h-4 text-white" />
                 </div>
                 <div>
                   <h5 className="font-semibold text-white mb-1 text-lg drop-shadow-sm">Email</h5>
@@ -57,8 +57,8 @@ const Footer = () => {
               </div>
 
               <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 hover:bg-white/10 transition-all duration-300">
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center shadow-lg">
-                  <Phone className="w-7 h-7 text-white" />
+                <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg flex items-center justify-center shadow-lg">
+                  <Phone className="w-4 h-4 text-white" />
                 </div>
                 <div>
                   <h5 className="font-semibold text-white mb-1 text-lg drop-shadow-sm">Phone</h5>
@@ -67,8 +67,8 @@ const Footer = () => {
               </div>
 
               <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 hover:bg-white/10 transition-all duration-300">
-                <div className="w-14 h-14 bg-gradient-to-br from-rose-400 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg">
-                  <MapPin className="w-7 h-7 text-white" />
+                <div className="w-8 h-8 bg-gradient-to-br from-rose-400 to-pink-500 rounded-lg flex items-center justify-center shadow-lg">
+                  <MapPin className="w-4 h-4 text-white" />
                 </div>
                 <div>
                   <h5 className="font-semibold text-white mb-1 text-lg drop-shadow-sm">Location</h5>

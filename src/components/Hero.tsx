@@ -53,7 +53,7 @@ const Hero = () => {
           </div>
 
           <div className="bg-white/70 backdrop-blur-xl border border-gray-200/50 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 group">
-            <AnimatedCounter end={50} suffix="+" className="text-4xl md:text-5xl font-bold text-blue-600 mb-3 group-hover:scale-105 transition-transform" />
+            <AnimatedCounter end={70} suffix="+" className="text-4xl md:text-5xl font-bold text-blue-600 mb-3 group-hover:scale-105 transition-transform" />
             <div className="text-gray-700 font-medium text-lg">Countries Served</div>
             <div className="text-gray-500 text-sm mt-2">Service Coverage Countries</div>
           </div>

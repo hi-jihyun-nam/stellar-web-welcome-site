@@ -1,3 +1,4 @@
+
 import { Sparkles, ArrowRight, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedCounter from "./AnimatedCounter";
@@ -25,7 +26,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 tracking-tight drop-shadow-sm">
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-16 tracking-tight drop-shadow-sm">
             Global Healthcare
             <br />
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent">

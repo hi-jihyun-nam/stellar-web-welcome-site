@@ -2,52 +2,36 @@
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const b2cServices = [
-  {
-    name: "Consultation",
-    price: "Complimentary",
-    description: "Comprehensive initial assessment",
-    features: [
-      "Personalized needs evaluation",
-      "Curated clinic recommendations",
-      "Detailed procedure information",
-      "Cultural guidance & support",
-      "Strategic planning consultation"
-    ]
-  },
-  {
-    name: "Complete Care",
-    price: "Bespoke",
-    description: "End-to-end journey management",
-    features: [
-      "Precision clinic matching",
-      "Professional language facilitation",
-      "Luxury travel coordination",
-      "Seamless procedure management",
-      "Comprehensive post-care support",
-      "Cultural integration services",
-      "24/7 dedicated concierge"
-    ],
-    popular: true
-  }
-];
+const b2cService = {
+  name: "Complete Care",
+  price: "Bespoke",
+  description: "End-to-end journey management",
+  features: [
+    "Precision clinic matching",
+    "Professional language facilitation",
+    "Luxury travel coordination",
+    "Seamless procedure management",
+    "Comprehensive post-care support",
+    "Cultural integration services",
+    "24/7 dedicated concierge"
+  ],
+  popular: true
+};
 
-const b2bServices = [
-  {
-    name: "Strategic Partnership",
-    price: "Let's Connect",
-    description: "For healthcare institutions",
-    features: [
-      "Global market expansion strategy",
-      "International client acquisition",
-      "Premium brand positioning",
-      "Cultural adaptation expertise",
-      "Sophisticated marketing campaigns",
-      "Long-term partnership development",
-      "Advanced analytics & insights"
-    ]
-  }
-];
+const b2bService = {
+  name: "Strategic Partnership",
+  price: "Let's Connect",
+  description: "For healthcare institutions",
+  features: [
+    "Global market expansion strategy",
+    "International client acquisition",
+    "Premium brand positioning",
+    "Cultural adaptation expertise",
+    "Sophisticated marketing campaigns",
+    "Long-term partnership development",
+    "Advanced analytics & insights"
+  ]
+};
 
 const Pricing = () => {
   return (
@@ -81,90 +65,75 @@ const Pricing = () => {
           </p>
         </div>
 
-        {/* B2C Services */}
-        <div className="mb-20">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">For Individuals (B2C)</h3>
-            <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-cyan-600 mx-auto rounded-full shadow-lg"></div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {b2cServices.map((service, index) => (
-              <div
-                key={index}
-                className={`relative p-8 rounded-3xl transition-all duration-500 hover:scale-105 shadow-lg bg-white/80 backdrop-blur-xl border border-gray-200/50 hover:border-cyan-300/60 hover:shadow-xl hover:shadow-cyan-200/20 ${
-                  service.popular ? 'ring-2 ring-cyan-400/50' : ''
-                }`}
-              >
-                {service.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-gradient-to-r from-cyan-500 to-cyan-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                      Most Popular
-                    </span>
-                  </div>
-                )}
-                <div className="text-center mb-8">
-                  <h4 className="text-2xl font-bold text-gray-900 mb-3">{service.name}</h4>
-                  <div className="text-4xl font-bold text-cyan-600 mb-3">
-                    {service.price}
-                  </div>
-                  <p className="text-gray-600 font-light">{service.description}</p>
-                </div>
-
-                <ul className="space-y-4 mb-8">
-                  {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-start gap-3">
-                      <Check className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-600 font-light leading-relaxed">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <Button
-                  className="w-full py-3 rounded-xl font-semibold transition-all duration-300 bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white border-0 shadow-lg hover:shadow-xl"
-                >
-                  Begin Journey
-                </Button>
+        {/* Side by side layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          {/* B2C Service - Left */}
+          <div>
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">For Individuals</h3>
+              <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-cyan-600 mx-auto rounded-full shadow-lg"></div>
+            </div>
+            <div className="relative p-8 rounded-3xl transition-all duration-500 hover:scale-105 shadow-lg bg-white/80 backdrop-blur-xl border border-gray-200/50 hover:border-cyan-300/60 hover:shadow-xl hover:shadow-cyan-200/20 ring-2 ring-cyan-400/50">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <span className="bg-gradient-to-r from-cyan-500 to-cyan-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                  Most Popular
+                </span>
               </div>
-            ))}
-          </div>
-        </div>
-
-        {/* B2B Services */}
-        <div>
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">For Healthcare Institutions (B2B)</h3>
-            <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-purple-600 mx-auto rounded-full shadow-lg"></div>
-          </div>
-          <div className="max-w-md mx-auto">
-            {b2bServices.map((service, index) => (
-              <div
-                key={index}
-                className="relative p-8 rounded-3xl transition-all duration-500 hover:scale-105 shadow-lg bg-white/80 backdrop-blur-xl border border-gray-200/50 hover:border-purple-300/60 hover:shadow-xl hover:shadow-purple-200/20"
-              >
-                <div className="text-center mb-8">
-                  <h4 className="text-2xl font-bold text-gray-900 mb-3">{service.name}</h4>
-                  <div className="text-4xl font-bold text-purple-600 mb-3">
-                    {service.price}
-                  </div>
-                  <p className="text-gray-600 font-light">{service.description}</p>
+              <div className="text-center mb-8">
+                <h4 className="text-2xl font-bold text-gray-900 mb-3">{b2cService.name}</h4>
+                <div className="text-4xl font-bold text-cyan-600 mb-3">
+                  {b2cService.price}
                 </div>
-
-                <ul className="space-y-4 mb-8">
-                  {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-start gap-3">
-                      <Check className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-600 font-light leading-relaxed">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <Button
-                  className="w-full py-3 rounded-xl font-semibold transition-all duration-300 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl"
-                >
-                  Start Partnership
-                </Button>
+                <p className="text-gray-600 font-light">{b2cService.description}</p>
               </div>
-            ))}
+
+              <ul className="space-y-4 mb-8">
+                {b2cService.features.map((feature, featureIndex) => (
+                  <li key={featureIndex} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600 font-light leading-relaxed">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <Button
+                className="w-full py-3 rounded-xl font-semibold transition-all duration-300 bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white border-0 shadow-lg hover:shadow-xl"
+              >
+                Begin Journey
+              </Button>
+            </div>
+          </div>
+
+          {/* B2B Service - Right */}
+          <div>
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">For Healthcare Institutions</h3>
+              <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-purple-600 mx-auto rounded-full shadow-lg"></div>
+            </div>
+            <div className="relative p-8 rounded-3xl transition-all duration-500 hover:scale-105 shadow-lg bg-white/80 backdrop-blur-xl border border-gray-200/50 hover:border-purple-300/60 hover:shadow-xl hover:shadow-purple-200/20">
+              <div className="text-center mb-8">
+                <h4 className="text-2xl font-bold text-gray-900 mb-3">{b2bService.name}</h4>
+                <div className="text-4xl font-bold text-purple-600 mb-3">
+                  {b2bService.price}
+                </div>
+                <p className="text-gray-600 font-light">{b2bService.description}</p>
+              </div>
+
+              <ul className="space-y-4 mb-8">
+                {b2bService.features.map((feature, featureIndex) => (
+                  <li key={featureIndex} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-600 font-light leading-relaxed">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <Button
+                className="w-full py-3 rounded-xl font-semibold transition-all duration-300 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl"
+              >
+                Start Partnership
+              </Button>
+            </div>
           </div>
         </div>
       </div>

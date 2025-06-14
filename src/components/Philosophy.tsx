@@ -1,4 +1,3 @@
-
 import { MessageCircle, Shield, Zap } from "lucide-react";
 
 const Philosophy = () => {
@@ -59,8 +58,10 @@ const Philosophy = () => {
           <div className="bg-white/80 backdrop-blur-sm border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
             <div className="flex items-start space-x-6">
               <div className="flex-shrink-0">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg">
-                  <MessageCircle className="w-8 h-8 text-white" />
+                <div className="w-16 h-16 rounded-full p-1 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                  <div className="w-full h-full bg-white rounded-full flex items-center justify-center">
+                    <MessageCircle className="w-8 h-8 text-blue-500" />
+                  </div>
                 </div>
               </div>
               <div>
@@ -77,8 +78,10 @@ const Philosophy = () => {
           <div className="bg-white/80 backdrop-blur-sm border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
             <div className="flex items-start space-x-6">
               <div className="flex-shrink-0">
-                <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center shadow-lg">
-                  <Shield className="w-8 h-8 text-white" />
+                <div className="w-16 h-16 rounded-full p-1 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                  <div className="w-full h-full bg-white rounded-full flex items-center justify-center">
+                    <Shield className="w-8 h-8 text-green-500" />
+                  </div>
                 </div>
               </div>
               <div>
@@ -95,8 +98,10 @@ const Philosophy = () => {
           <div className="bg-white/80 backdrop-blur-sm border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
             <div className="flex items-start space-x-6">
               <div className="flex-shrink-0">
-                <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
-                  <Zap className="w-8 h-8 text-white" />
+                <div className="w-16 h-16 rounded-full p-1 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                  <div className="w-full h-full bg-white rounded-full flex items-center justify-center">
+                    <Zap className="w-8 h-8 text-purple-500" />
+                  </div>
                 </div>
               </div>
               <div>

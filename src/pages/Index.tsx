@@ -5,7 +5,6 @@ import Mission from "@/components/Mission";
 import Philosophy from "@/components/Philosophy";
 import HowWeConnect from "@/components/HowWeConnect";
 import Pricing from "@/components/Pricing";
-import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import MouseEffect from "@/components/MouseEffect";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -66,16 +65,6 @@ const Index = () => {
         }`}
       >
         <Pricing />
-      </div>
-      
-      <div 
-        id="contact" 
-        data-animate 
-        className={`transition-all duration-600 delay-400 ${
-          isVisible('contact') ? 'opacity-100 translate-y-0 scale-100 shadow-lg' : 'opacity-0 translate-y-20 scale-95'
-        }`}
-      >
-        <ContactSection />
       </div>
       
       <Footer />

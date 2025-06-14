@@ -6,7 +6,7 @@ const MouseEffect = () => {
 
   return (
     <>
-      {/* Main cursor - 파란색으로 변경하고 텍스트 반전 효과 추가 */}
+      {/* Main cursor - blue color with text inversion effect */}
       <div
         className="fixed pointer-events-none z-50 mix-blend-difference"
         style={{
@@ -22,7 +22,7 @@ const MouseEffect = () => {
         />
       </div>
 
-      {/* Trailing circles - 파란색 톤으로 변경 */}
+      {/* Trailing circles - blue tones */}
       <div
         className="fixed pointer-events-none z-40"
         style={{

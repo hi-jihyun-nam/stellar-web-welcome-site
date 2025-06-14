@@ -54,21 +54,10 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto leading-relaxed font-light drop-shadow-lg">
-            우리는 한국의 최고 의료기관과 미용 클리닉을 전 세계와 연결하는
+            We provide innovative services that connect Korea's premier medical institutions 
             <br className="hidden md:block" />
-            혁신적인 플랫폼입니다.
+            and aesthetic clinics with the world.
           </p>
-        </div>
-
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-20 animate-fade-in">
-          <Button className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white border-0 rounded-2xl shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 hover:scale-105">
-            시작하기
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </Button>
-          <Button variant="outline" className="px-8 py-4 text-lg font-semibold bg-white/10 border-white/30 text-white hover:bg-white/20 rounded-2xl backdrop-blur-md shadow-xl transition-all duration-300 hover:scale-105">
-            더 알아보기
-          </Button>
         </div>
 
         {/* Stats Cards */}
@@ -80,7 +69,7 @@ const Hero = () => {
               className="text-4xl md:text-5xl font-bold text-cyan-300 mb-3 group-hover:scale-105 transition-transform drop-shadow-lg"
             />
             <div className="text-gray-200 font-medium text-lg">Partner Clinics</div>
-            <div className="text-gray-300 text-sm mt-2">전국 파트너 병원</div>
+            <div className="text-gray-300 text-sm mt-2">Nationwide Partner Hospitals</div>
           </div>
 
           <div className="bg-gradient-to-br from-white/10 via-white/20 to-white/10 backdrop-blur-xl border border-white/30 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 group">
@@ -90,13 +79,13 @@ const Hero = () => {
               className="text-4xl md:text-5xl font-bold text-cyan-300 mb-3 group-hover:scale-105 transition-transform drop-shadow-lg"
             />
             <div className="text-gray-200 font-medium text-lg">Countries Served</div>
-            <div className="text-gray-300 text-sm mt-2">서비스 제공 국가</div>
+            <div className="text-gray-300 text-sm mt-2">Service Coverage Countries</div>
           </div>
 
           <div className="bg-gradient-to-br from-white/10 via-white/20 to-white/10 backdrop-blur-xl border border-white/30 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 group">
             <div className="text-4xl md:text-5xl font-bold text-cyan-300 mb-3 group-hover:scale-105 transition-transform drop-shadow-lg">24/7</div>
             <div className="text-gray-200 font-medium text-lg">Global Support</div>
-            <div className="text-gray-300 text-sm mt-2">글로벌 지원 서비스</div>
+            <div className="text-gray-300 text-sm mt-2">Global Support Service</div>
           </div>
         </div>
       </div>

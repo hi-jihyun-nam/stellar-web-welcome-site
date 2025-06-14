@@ -1,24 +1,23 @@
 
-
 const Header = () => {
   return (
-    <header className="bg-slate-900/80 backdrop-blur-md border-b border-white/10">
+    <header className="bg-white/95 backdrop-blur-md border-b border-gray-200/50 shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-white">
+            <h1 className="text-2xl font-bold text-gray-900">
               Kimio
             </h1>
-            <span className="ml-3 text-sm text-cyan-300 font-medium">
+            <span className="ml-3 text-sm text-blue-600 font-medium">
               Clinic & People
             </span>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-gray-300 hover:text-white transition-colors">Services</a>
-            <a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a>
-            <a href="#pricing" className="text-gray-300 hover:text-white transition-colors">Pricing</a>
-            <a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a>
+            <a href="#services" className="text-gray-600 hover:text-gray-900 transition-colors">Services</a>
+            <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors">About</a>
+            <a href="#pricing" className="text-gray-600 hover:text-gray-900 transition-colors">Pricing</a>
+            <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
           </nav>
         </div>
       </div>
@@ -27,4 +26,3 @@ const Header = () => {
 };
 
 export default Header;
-

@@ -55,52 +55,58 @@ const Philosophy = () => {
           </div>
         </div>
 
-        <div className="space-y-12">
-          <div className="flex items-start space-x-6">
-            <div className="flex-shrink-0">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-500 rounded-2xl flex items-center justify-center shadow-lg">
-                <MessageCircle className="w-8 h-8 text-white" />
+        <div className="space-y-6">
+          <div className="bg-white/80 backdrop-blur-sm border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+            <div className="flex items-start space-x-6">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
+                  <MessageCircle className="w-6 h-6 text-white" />
+                </div>
               </div>
-            </div>
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 leading-tight">
-                People-Centered Approach
-              </h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                We see clients as individuals with real stories, hopes, and concerns, not just consumers.
-              </p>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3 leading-tight">
+                  People-Centered Approach
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  We see clients as individuals with real stories, hopes, and concerns, not just consumers.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div className="flex items-start space-x-6">
-            <div className="flex-shrink-0">
-              <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-green-500 rounded-2xl flex items-center justify-center shadow-lg">
-                <Shield className="w-8 h-8 text-white" />
+          <div className="bg-white/80 backdrop-blur-sm border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+            <div className="flex items-start space-x-6">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
+                  <Shield className="w-6 h-6 text-white" />
+                </div>
               </div>
-            </div>
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 leading-tight">
-                Trust & Understanding
-              </h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Our connections are built on empathy and understanding, not just visibility.
-              </p>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3 leading-tight">
+                  Trust & Understanding
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Our connections are built on empathy and understanding, not just visibility.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div className="flex items-start space-x-6">
-            <div className="flex-shrink-0">
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-500 rounded-2xl flex items-center justify-center shadow-lg">
-                <Zap className="w-8 h-8 text-white" />
+          <div className="bg-white/80 backdrop-blur-sm border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+            <div className="flex items-start space-x-6">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center">
+                  <Zap className="w-6 h-6 text-white" />
+                </div>
               </div>
-            </div>
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 leading-tight">
-                Technology with Purpose
-              </h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                We integrate AI to understand people better, not to replace human connection.
-              </p>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3 leading-tight">
+                  Technology with Purpose
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  We integrate AI to understand people better, not to replace human connection.
+                </p>
+              </div>
             </div>
           </div>
         </div>

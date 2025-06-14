@@ -5,7 +5,7 @@ import AnimatedCounter from "./AnimatedCounter";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-6 py-32 overflow-hidden">
       {/* Enhanced 3D Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50"></div>
       
@@ -29,27 +29,9 @@ const Hero = () => {
         </svg>
       </div>
       
-      {/* Floating particles */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-2 h-2 bg-blue-400 rounded-full animate-ping [animation-duration:3s]"></div>
-        <div className="absolute top-40 right-32 w-1 h-1 bg-purple-400 rounded-full animate-ping [animation-duration:4s]"></div>
-        <div className="absolute bottom-32 left-40 w-1.5 h-1.5 bg-teal-400 rounded-full animate-ping [animation-duration:5s]"></div>
-        <div className="absolute bottom-20 right-20 w-2 h-2 bg-pink-400 rounded-full animate-ping [animation-duration:6s]"></div>
-      </div>
-      
       <div className="relative z-10 text-center max-w-7xl mx-auto py-16">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-6 py-3 bg-white/80 backdrop-blur-md border border-gray-200/50 rounded-full mb-16 animate-fade-in shadow-lg hover:shadow-xl transition-all duration-300">
-          <Globe className="w-5 h-5 text-blue-600" />
-          <span className="text-base font-medium text-gray-700">Bridging Korea with the World</span>
-        </div>
-
         {/* Main Title */}
         <div className="mb-20 animate-fade-in">
-          <div className="flex items-center justify-center gap-2 mb-6">
-            <div className="text-lg text-blue-600 font-bold">Kimio</div>
-            <div className="text-sm text-gray-500 font-medium italic">Keen to Trends, True to Aesthetic.</div>
-          </div>
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 tracking-tight drop-shadow-sm">
             Global Healthcare
             <br />

@@ -1,4 +1,3 @@
-
 import { Heart, MessageCircle, Shield, Users2, Globe, Star } from "lucide-react";
 
 const connectionPoints = [
@@ -61,14 +60,6 @@ const HowWeConnect = () => {
           </defs>
           <rect width="100%" height="100%" fill="url(#grid-how-we-connect)" className="text-gray-300/30"/>
         </svg>
-      </div>
-      
-      {/* Floating particles */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-2 h-2 bg-blue-400 rounded-full animate-ping [animation-duration:3s]"></div>
-        <div className="absolute top-40 right-32 w-1 h-1 bg-purple-400 rounded-full animate-ping [animation-duration:4s]"></div>
-        <div className="absolute bottom-32 left-40 w-1.5 h-1.5 bg-teal-400 rounded-full animate-ping [animation-duration:5s]"></div>
-        <div className="absolute bottom-20 right-20 w-2 h-2 bg-pink-400 rounded-full animate-ping [animation-duration:6s]"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">

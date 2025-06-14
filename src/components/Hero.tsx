@@ -45,7 +45,7 @@ const Hero = () => {
 
         {/* Main Headline */}
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-6 animate-fade-in tracking-tight drop-shadow-2xl">
-          C&P Ventures
+          Crowd Anperson
           <br />
           <span className="text-cyan-300 text-xl md:text-2xl font-semibold">
             Clinic & People

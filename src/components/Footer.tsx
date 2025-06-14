@@ -25,7 +25,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           {/* Brand */}
           <div className="md:col-span-2">
-            <h3 className="text-3xl font-bold text-white mb-6 drop-shadow-lg">C&P Ventures</h3>
+            <h3 className="text-3xl font-bold text-white mb-6 drop-shadow-lg">Crowd Anperson</h3>
             <p className="text-cyan-300 mb-6 max-w-md font-medium">
               <strong>Clinic & People</strong> | <strong>Crowd & Person</strong>
             </p>
@@ -46,7 +46,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="pt-8 border-t border-white/20 text-center">
           <p className="text-gray-400 font-light">
-            © 2024 C&P Ventures. Crafting connections that transform lives.
+            © 2024 Crowd Anperson. Crafting connections that transform lives.
           </p>
         </div>
       </div>

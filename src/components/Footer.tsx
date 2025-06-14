@@ -1,4 +1,3 @@
-
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
@@ -31,7 +30,7 @@ const Footer = () => {
             <h3 className="text-4xl font-bold text-gray-900 mb-8">Kimio</h3>
             <div className="mb-8">
               <p className="text-2xl font-semibold text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
-                "Connecting Hearts, Healing Lives"
+                Connecting Hearts, Healing Lives
               </p>
             </div>
             <p className="text-gray-600 mb-8 max-w-lg leading-relaxed font-light text-lg">
@@ -40,7 +39,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Simplified Contact Information */}
+          {/* Quick Contact */}
           <div className="bg-white/60 backdrop-blur-xl p-8 rounded-3xl border border-gray-200/50 shadow-lg">
             <h4 className="text-gray-900 font-bold mb-6 text-xl">Quick Contact</h4>
             
@@ -75,4 +74,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

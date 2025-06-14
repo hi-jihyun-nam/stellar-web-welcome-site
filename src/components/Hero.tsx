@@ -1,6 +1,5 @@
 
-import { ArrowRight, Sparkles } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Sparkles } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -31,17 +30,6 @@ const Hero = () => {
           We connect Korea's top medical institutions and beauty clinics to the world. 
           Beyond information, we build personalized bridges of trust, understanding, and excellence.
         </p>
-
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
-          <Button size="lg" className="bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white px-8 py-4 text-lg rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-teal-500/25">
-            Start Your Journey
-            <ArrowRight className="w-5 h-5 ml-2" />
-          </Button>
-          <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-4 text-lg rounded-full transition-all duration-300 hover:scale-105">
-            Learn More
-          </Button>
-        </div>
 
         {/* Stats */}
         <div className="flex flex-col sm:flex-row gap-8 justify-center items-center mt-16 animate-fade-in">

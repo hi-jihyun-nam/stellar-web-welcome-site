@@ -28,9 +28,7 @@ const Hero = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-16 tracking-tight drop-shadow-sm">
-            <span className="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent font-extrabold">
-              Global Gateway
-            </span> to
+            Global Gateway to
             <br />
             Korea's Leading Experts in
             <br />

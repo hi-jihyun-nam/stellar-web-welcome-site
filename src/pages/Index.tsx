@@ -17,13 +17,22 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50/50 via-white to-purple-50/30 cursor-none">
       <MouseEffect />
       <Header />
-      <Hero />
+      
+      <div 
+        id="hero" 
+        data-animate 
+        className={`transition-all duration-600 ${
+          isVisible('hero') ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'
+        }`}
+      >
+        <Hero />
+      </div>
       
       <div 
         id="mission" 
         data-animate 
-        className={`transition-all duration-1000 ${
-          isVisible('mission') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
+        className={`transition-all duration-600 ${
+          isVisible('mission') ? 'opacity-100 translate-y-0 scale-100 shadow-lg' : 'opacity-0 translate-y-20 scale-95'
         }`}
       >
         <Mission />
@@ -32,8 +41,8 @@ const Index = () => {
       <div 
         id="philosophy" 
         data-animate 
-        className={`transition-all duration-1000 delay-200 ${
-          isVisible('philosophy') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
+        className={`transition-all duration-600 delay-100 ${
+          isVisible('philosophy') ? 'opacity-100 translate-y-0 scale-100 shadow-lg' : 'opacity-0 translate-y-20 scale-95'
         }`}
       >
         <Philosophy />
@@ -42,8 +51,8 @@ const Index = () => {
       <div 
         id="how-we-connect" 
         data-animate 
-        className={`transition-all duration-1000 delay-300 ${
-          isVisible('how-we-connect') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
+        className={`transition-all duration-600 delay-200 ${
+          isVisible('how-we-connect') ? 'opacity-100 translate-y-0 scale-100 shadow-lg' : 'opacity-0 translate-y-20 scale-95'
         }`}
       >
         <HowWeConnect />
@@ -52,8 +61,8 @@ const Index = () => {
       <div 
         id="pricing" 
         data-animate 
-        className={`transition-all duration-1000 delay-400 ${
-          isVisible('pricing') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
+        className={`transition-all duration-600 delay-300 ${
+          isVisible('pricing') ? 'opacity-100 translate-y-0 scale-100 shadow-lg' : 'opacity-0 translate-y-20 scale-95'
         }`}
       >
         <Pricing />
@@ -62,8 +71,8 @@ const Index = () => {
       <div 
         id="contact" 
         data-animate 
-        className={`transition-all duration-1000 delay-500 ${
-          isVisible('contact') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
+        className={`transition-all duration-600 delay-400 ${
+          isVisible('contact') ? 'opacity-100 translate-y-0 scale-100 shadow-lg' : 'opacity-0 translate-y-20 scale-95'
         }`}
       >
         <ContactSection />

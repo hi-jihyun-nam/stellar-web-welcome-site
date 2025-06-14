@@ -1,8 +1,6 @@
-
 import { Sparkles, ArrowRight, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedCounter from "./AnimatedCounter";
-
 const Hero = () => {
   return <section className="relative min-h-screen flex items-center justify-center px-6 py-32 overflow-hidden">
       {/* Enhanced 3D Background */}
@@ -48,7 +46,7 @@ const Hero = () => {
             <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-3 group-hover:scale-105 transition-transform">
               <AnimatedCounter end={4.8} suffix="/5" className="inline" />
             </div>
-            <div className="text-gray-700 font-medium text-lg">Average Score</div>
+            <div className="text-gray-700 font-medium text-lg">User Satisfaction</div>
             <div className="text-gray-500 text-sm mt-2">User Satisfaction</div>
           </div>
 
@@ -69,5 +67,4 @@ const Hero = () => {
       </div>
     </section>;
 };
-
 export default Hero;

@@ -4,7 +4,7 @@ import AnimatedCounter from "./AnimatedCounter";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden pt-20">
       {/* Enhanced 3D Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"></div>
       
@@ -42,15 +42,6 @@ const Hero = () => {
           <Sparkles className="w-4 h-4 text-cyan-300" />
           <span className="text-sm font-medium text-white">Bridging Korea with the World</span>
         </div>
-
-        {/* Main Headline */}
-        <h1 className="text-3xl md:text-4xl font-bold text-white mb-6 animate-fade-in tracking-tight drop-shadow-2xl">
-          Crowd Anperson
-          <br />
-          <span className="text-cyan-300 text-xl md:text-2xl font-semibold">
-            Clinic & People
-          </span>
-        </h1>
 
         {/* Highlighted Main Explanation */}
         <div className="bg-gradient-to-r from-white/10 via-white/20 to-white/10 backdrop-blur-xl border border-white/30 rounded-3xl p-10 mb-16 animate-fade-in shadow-2xl">

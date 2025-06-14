@@ -7,31 +7,31 @@ const connectionPoints = [
     icon: Shield,
     title: "Trust & Safety First",
     description: "We help clients access Korean medical and beauty services safely, with verified partners and transparent processes.",
-    color: "from-teal-400 to-cyan-500"
+    color: "from-red-400 to-red-500"
   },
   {
     icon: Users2,
-    title: "Personalized Service Models",
+    title: "Personalized Service Models", 
     description: "We develop customized service experiences that meet both client expectations and provider capabilities.",
-    color: "from-teal-400 to-cyan-500"
+    color: "from-purple-400 to-purple-500"
   },
   {
     icon: Globe,
     title: "Global Connector",
     description: "We introduce Korea's top medical institutions, beauty clinics, and cosmetic brands to international markets.",
-    color: "from-teal-400 to-cyan-500"
+    color: "from-blue-400 to-blue-500"
   },
   {
     icon: Star,
     title: "Meaningful Marketing",
     description: "Marketing isn't about moving numbers—it's about moving people. We create connections that truly make a difference.",
-    color: "from-teal-400 to-cyan-500"
+    color: "from-green-400 to-green-500"
   },
   {
     icon: Heart,
     title: "People-Centered Approach",
     description: "We see clients as individuals with real stories, hopes, and concerns. Our connections are built on empathy and understanding.",
-    color: "from-teal-400 to-cyan-500"
+    color: "from-pink-400 to-pink-500"
   },
   {
     icon: MessageCircle,

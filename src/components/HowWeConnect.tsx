@@ -24,23 +24,23 @@ const connectionPoints = [
 
 const HowWeConnect = () => {
   return (
-    <section className="py-32 px-6 relative bg-gradient-to-b from-gray-50 via-blue-50/30 to-purple-50/20 overflow-hidden">
+    <section className="py-32 px-6 relative bg-white overflow-hidden">
       {/* Background effects */}
-      <div className="absolute inset-0 bg-gradient-to-r from-cyan-100/20 via-purple-100/30 to-pink-100/20 animate-pulse"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-cyan-100/10 via-purple-100/15 to-pink-100/10 animate-pulse"></div>
       
       {/* 3D floating elements */}
-      <div className="absolute top-1/3 right-1/4 w-56 h-56 bg-gradient-to-br from-pink-200/30 to-rose-300/40 rounded-full blur-3xl animate-bounce [animation-duration:7s]"></div>
-      <div className="absolute bottom-1/4 left-1/3 w-40 h-40 bg-gradient-to-br from-cyan-200/40 to-blue-300/30 rounded-full blur-2xl animate-bounce [animation-duration:9s] [animation-delay:2s]"></div>
+      <div className="absolute top-1/3 right-1/4 w-56 h-56 bg-gradient-to-br from-pink-200/20 to-rose-300/30 rounded-full blur-3xl animate-bounce [animation-duration:7s]"></div>
+      <div className="absolute bottom-1/4 left-1/3 w-40 h-40 bg-gradient-to-br from-cyan-200/30 to-blue-300/20 rounded-full blur-2xl animate-bounce [animation-duration:9s] [animation-delay:2s]"></div>
       
       {/* Grid pattern overlay */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-3">
         <svg width="100%" height="100%" className="absolute inset-0">
           <defs>
             <pattern id="grid-connect" width="50" height="50" patternUnits="userSpaceOnUse">
               <path d="M 50 0 L 0 0 0 50" fill="none" stroke="currentColor" strokeWidth="1"/>
             </pattern>
           </defs>
-          <rect width="100%" height="100%" fill="url(#grid-connect)" className="text-gray-300/40"/>
+          <rect width="100%" height="100%" fill="url(#grid-connect)" className="text-gray-300/20"/>
         </svg>
       </div>
 
@@ -54,7 +54,7 @@ const HowWeConnect = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {connectionPoints.map((point, index) => (
             <div
               key={index}
@@ -71,13 +71,6 @@ const HowWeConnect = () => {
               </p>
             </div>
           ))}
-        </div>
-
-        <div className="text-center">
-          <div className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-white/60 to-white/80 backdrop-blur-md border border-gray-200/50 rounded-full shadow-lg">
-            <span className="text-blue-600 font-medium">Ready to begin your journey?</span>
-            <ArrowRight className="w-5 h-5 text-blue-500" />
-          </div>
         </div>
       </div>
     </section>

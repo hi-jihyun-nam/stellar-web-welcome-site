@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-gradient-to-br from-purple-200/50 to-pink-200/40 rounded-full blur-2xl animate-bounce [animation-duration:8s] [animation-delay:2s]"></div>
       <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-gradient-to-br from-teal-200/40 to-cyan-200/50 rounded-full blur-2xl animate-bounce [animation-duration:7s] [animation-delay:4s]"></div>
       
-      <div className="relative z-4 text-center max-w-7xl mx-auto py-16">
+      <div className="relative z-10 text-center max-w-7xl mx-auto py-16">
         {/* Main Title */}
         <div className="mb-20 animate-fade-in">
           {/* Bridging Korea with the World - positioned above main title */}

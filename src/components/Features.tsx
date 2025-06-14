@@ -66,32 +66,41 @@ const brandPoints = [
 
 const Features = () => {
   return (
-    <section className="py-32 px-6 relative bg-gradient-to-b from-slate-900 via-purple-900 to-slate-900 overflow-hidden">
-      {/* Background effects similar to Hero */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-purple-600/20 to-teal-600/10 animate-pulse"></div>
+    <section className="py-32 px-6 relative bg-gradient-to-br from-blue-50 via-white to-purple-50 overflow-hidden">
+      {/* Animated gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-100/30 via-purple-100/40 to-teal-100/30 animate-pulse"></div>
       
       {/* 3D floating elements */}
-      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-cyan-400/20 to-blue-600/30 rounded-full blur-3xl animate-bounce [animation-duration:8s]"></div>
-      <div className="absolute bottom-1/3 right-1/4 w-48 h-48 bg-gradient-to-br from-purple-500/30 to-pink-500/20 rounded-full blur-2xl animate-bounce [animation-duration:6s] [animation-delay:3s]"></div>
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-blue-200/40 to-cyan-300/50 rounded-full blur-3xl animate-bounce [animation-duration:6s]"></div>
+      <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-gradient-to-br from-purple-200/50 to-pink-200/40 rounded-full blur-2xl animate-bounce [animation-duration:8s] [animation-delay:2s]"></div>
+      <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-gradient-to-br from-teal-200/40 to-cyan-200/50 rounded-full blur-2xl animate-bounce [animation-duration:7s] [animation-delay:4s]"></div>
       
       {/* Grid pattern overlay */}
       <div className="absolute inset-0 opacity-5">
         <svg width="100%" height="100%" className="absolute inset-0">
           <defs>
-            <pattern id="grid-features" width="40" height="40" patternUnits="userSpaceOnUse">
-              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="1"/>
+            <pattern id="grid-features" width="50" height="50" patternUnits="userSpaceOnUse">
+              <path d="M 50 0 L 0 0 0 50" fill="none" stroke="currentColor" strokeWidth="1"/>
             </pattern>
           </defs>
-          <rect width="100%" height="100%" fill="url(#grid-features)" className="text-white/30"/>
+          <rect width="100%" height="100%" fill="url(#grid-features)" className="text-gray-300/30"/>
         </svg>
+      </div>
+      
+      {/* Floating particles */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-20 w-2 h-2 bg-blue-400 rounded-full animate-ping [animation-duration:3s]"></div>
+        <div className="absolute top-40 right-32 w-1 h-1 bg-purple-400 rounded-full animate-ping [animation-duration:4s]"></div>
+        <div className="absolute bottom-32 left-40 w-1.5 h-1.5 bg-teal-400 rounded-full animate-ping [animation-duration:5s]"></div>
+        <div className="absolute bottom-20 right-20 w-2 h-2 bg-pink-400 rounded-full animate-ping [animation-duration:6s]"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 tracking-tight drop-shadow-2xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight drop-shadow-sm">
             Our Philosophy & Approach
           </h2>
-          <p className="text-xl text-gray-200 max-w-4xl mx-auto font-light leading-relaxed drop-shadow-lg">
+          <p className="text-xl text-gray-700 max-w-4xl mx-auto font-light leading-relaxed">
             Discover how we bridge Korea's medical excellence with global healthcare needs through sophisticated, human-centered innovation
           </p>
         </div>
@@ -99,22 +108,22 @@ const Features = () => {
         {/* Philosophy Section */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-white mb-4 drop-shadow-lg">Our Philosophy</h3>
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Philosophy</h3>
             <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-cyan-600 mx-auto rounded-full shadow-lg"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {philosophyPoints.map((point, index) => (
               <div
                 key={index}
-                className="group relative p-8 bg-gradient-to-br from-white/10 via-white/20 to-white/10 backdrop-blur-xl border border-white/30 rounded-3xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:border-cyan-300/50 shadow-xl"
+                className="group relative p-8 bg-white/70 backdrop-blur-xl border border-gray-200/50 rounded-3xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:border-cyan-300/50 shadow-lg"
               >
                 <div className="w-14 h-14 bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                   <point.icon className="w-7 h-7 text-white" />
                 </div>
-                <h4 className="text-xl font-semibold text-white mb-4 leading-tight drop-shadow-lg">
+                <h4 className="text-xl font-semibold text-gray-900 mb-4 leading-tight">
                   {point.title}
                 </h4>
-                <p className="text-gray-200 leading-relaxed font-light">
+                <p className="text-gray-600 leading-relaxed font-light">
                   {point.description}
                 </p>
               </div>
@@ -125,22 +134,22 @@ const Features = () => {
         {/* Service Section */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-white mb-4 drop-shadow-lg">Our Services</h3>
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Services</h3>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto rounded-full shadow-lg"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {servicePoints.map((point, index) => (
               <div
                 key={index}
-                className="group relative p-8 bg-gradient-to-br from-white/10 via-white/20 to-white/10 backdrop-blur-xl border border-white/30 rounded-3xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:border-blue-300/50 shadow-xl"
+                className="group relative p-8 bg-white/70 backdrop-blur-xl border border-gray-200/50 rounded-3xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:border-blue-300/50 shadow-lg"
               >
                 <div className="w-14 h-14 bg-gradient-to-br from-blue-400 to-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                   <point.icon className="w-7 h-7 text-white" />
                 </div>
-                <h4 className="text-xl font-semibold text-white mb-4 leading-tight drop-shadow-lg">
+                <h4 className="text-xl font-semibold text-gray-900 mb-4 leading-tight">
                   {point.title}
                 </h4>
-                <p className="text-gray-200 leading-relaxed font-light">
+                <p className="text-gray-600 leading-relaxed font-light">
                   {point.description}
                 </p>
               </div>
@@ -151,22 +160,22 @@ const Features = () => {
         {/* Brand Section */}
         <div>
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-white mb-4 drop-shadow-lg">Our Identity</h3>
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Identity</h3>
             <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-cyan-500 mx-auto rounded-full shadow-lg"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {brandPoints.map((point, index) => (
               <div
                 key={index}
-                className="group relative p-8 bg-gradient-to-br from-white/10 via-white/20 to-white/10 backdrop-blur-xl border border-white/30 rounded-3xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:border-teal-300/50 shadow-xl"
+                className="group relative p-8 bg-white/70 backdrop-blur-xl border border-gray-200/50 rounded-3xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:border-teal-300/50 shadow-lg"
               >
                 <div className="w-14 h-14 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                   <point.icon className="w-7 h-7 text-white" />
                 </div>
-                <h4 className="text-xl font-semibold text-white mb-4 leading-tight drop-shadow-lg">
+                <h4 className="text-xl font-semibold text-gray-900 mb-4 leading-tight">
                   {point.title}
                 </h4>
-                <p className="text-gray-200 leading-relaxed font-light">
+                <p className="text-gray-600 leading-relaxed font-light">
                   {point.description}
                 </p>
               </div>

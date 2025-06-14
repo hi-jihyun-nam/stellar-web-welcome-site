@@ -1,3 +1,4 @@
+
 import { Sparkles, ArrowRight, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedCounter from "./AnimatedCounter";
@@ -33,7 +34,7 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-lg sm:text-xl max-w-6xl mx-auto leading-relaxed px-4 sm:px-6 md:px-8 text-slate-500 font-medium md:text-2xl">
-            We provide innovative services that connect Korea's premier medical institutions and aesthetic clinics with the world. 
+            We connect Korea's premier medical institutions and aesthetic clinics with the world. 
             <span className="block mt-4 sm:mt-5 md:mt-6">
               With a keen understanding of global trends and a dedication to aesthetic refinement, we craft services that resonate with today's global audience.
             </span>

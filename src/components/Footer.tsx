@@ -32,7 +32,7 @@ const Footer = () => {
             
             <div className="mb-8">
               <p className="text-2xl font-semibold text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
-                Connecting Hearts, Healing Lives
+                Beyond Inspiration, Connecting Hearts
               </p>
             </div>
             <p className="text-gray-600 mb-8 max-w-lg leading-relaxed font-light text-lg">

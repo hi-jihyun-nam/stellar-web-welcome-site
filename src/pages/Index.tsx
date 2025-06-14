@@ -5,6 +5,7 @@ import Mission from "@/components/Mission";
 import Philosophy from "@/components/Philosophy";
 import HowWeConnect from "@/components/HowWeConnect";
 import Pricing from "@/components/Pricing";
+import EmailCollection from "@/components/EmailCollection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -16,6 +17,7 @@ const Index = () => {
       <Philosophy />
       <HowWeConnect />
       <Pricing />
+      <EmailCollection />
       <Footer />
     </div>    
   );

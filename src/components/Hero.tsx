@@ -20,6 +20,16 @@ const Hero = () => {
       <div className="relative z-10 text-center max-w-7xl mx-auto py-16">
         {/* Main Title */}
         <div className="mb-20 animate-fade-in">
+          {/* Bridging Korea with the World - positioned above main title */}
+          <div className="mb-12 flex justify-center">
+            <div className="bg-white/80 backdrop-blur-md border border-gray-200/50 rounded-full px-8 py-4 shadow-lg flex items-center gap-3">
+              <Globe className="w-6 h-6 text-blue-600" />
+              <span className="text-lg font-medium text-gray-800">
+                Bridging Korea with the World
+              </span>
+            </div>
+          </div>
+
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 tracking-tight drop-shadow-sm">
             Global Healthcare
             <br />
@@ -27,9 +37,6 @@ const Hero = () => {
               Connection Hub
             </span>
           </h1>
-          <p className="text-2xl md:text-3xl text-gray-700 mb-8 font-light">
-            Bridging Korea with the world
-          </p>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-6xl mx-auto leading-relaxed font-light px-4 sm:px-6 md:px-8">
             We provide innovative services that connect Korea's premier medical institutions and aesthetic clinics with the world. 
             <span className="block mt-4 sm:mt-5 md:mt-6">

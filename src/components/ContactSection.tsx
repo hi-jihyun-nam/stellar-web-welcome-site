@@ -5,7 +5,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useForm } from "react-hook-form";
-import { Mail, Phone, MapPin } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 interface ContactFormData {
@@ -60,52 +59,13 @@ const ContactSection = () => {
             Get in Touch
           </h2>
           <p className="text-xl text-gray-200 max-w-4xl mx-auto font-light leading-relaxed drop-shadow-lg">
-            Ready to begin your healthcare journey? Connect with our expert team for personalized consultation and guidance.
+            Connect with our expert team for personalized consultation and guidance.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <div className="bg-gradient-to-br from-white/10 via-white/20 to-white/10 backdrop-blur-xl p-8 rounded-3xl border border-white/30 shadow-xl">
-              <h3 className="text-2xl font-semibold text-white mb-8 drop-shadow-lg">Contact Information</h3>
-              
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg">
-                    <Mail className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-white mb-1 drop-shadow-sm">Email</h4>
-                    <p className="text-gray-200">info@cpventures.com</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center shadow-lg">
-                    <Phone className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-white mb-1 drop-shadow-sm">Phone</h4>
-                    <p className="text-gray-200">+82 2-1234-5678</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-rose-400 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg">
-                    <MapPin className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-white mb-1 drop-shadow-sm">Location</h4>
-                    <p className="text-gray-200">Seoul, South Korea</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
+        <div className="flex justify-center">
           {/* Contact Form */}
-          <div className="bg-gradient-to-br from-white/10 via-white/20 to-white/10 backdrop-blur-xl p-8 rounded-3xl border border-white/30 shadow-xl">
+          <div className="bg-gradient-to-br from-white/10 via-white/20 to-white/10 backdrop-blur-xl p-8 rounded-3xl border border-white/30 shadow-xl max-w-2xl w-full">
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <FormField

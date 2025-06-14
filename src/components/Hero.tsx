@@ -54,7 +54,7 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto leading-relaxed font-light drop-shadow-lg">
-            We provide innovative services that connect Korea's premier medical institutions 
+            We provide innovative services that connect Korea's premier medical institutions
             <br className="hidden md:block" />
             and aesthetic clinics with the world.
           </p>
@@ -63,13 +63,9 @@ const Hero = () => {
         {/* Stats Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto animate-fade-in">
           <div className="bg-gradient-to-br from-white/10 via-white/20 to-white/10 backdrop-blur-xl border border-white/30 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 group">
-            <AnimatedCounter 
-              end={500} 
-              suffix="+"
-              className="text-4xl md:text-5xl font-bold text-cyan-300 mb-3 group-hover:scale-105 transition-transform drop-shadow-lg"
-            />
-            <div className="text-gray-200 font-medium text-lg">Partner Clinics</div>
-            <div className="text-gray-300 text-sm mt-2">Nationwide Partner Hospitals</div>
+            <div className="text-4xl md:text-5xl font-bold text-cyan-300 mb-3 group-hover:scale-105 transition-transform drop-shadow-lg">4.8/5</div>
+            <div className="text-gray-200 font-medium text-lg">Average Satisfaction Score</div>
+            <div className="text-gray-300 text-sm mt-2">User Satisfaction</div>
           </div>
 
           <div className="bg-gradient-to-br from-white/10 via-white/20 to-white/10 backdrop-blur-xl border border-white/30 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 group">
@@ -83,7 +79,7 @@ const Hero = () => {
           </div>
 
           <div className="bg-gradient-to-br from-white/10 via-white/20 to-white/10 backdrop-blur-xl border border-white/30 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 group">
-            <div className="text-4xl md:text-5xl font-bold text-cyan-300 mb-3 group-hover:scale-105 transition-transform drop-shadow-lg">24/7</div>
+            <div className="text-4xl md:text-5xl font-bold text-cyan-300 mb-3 group-hover:scale-105 transition-transform drop-shadow-lg animate-pulse">24/7</div>
             <div className="text-gray-200 font-medium text-lg">Global Support</div>
             <div className="text-gray-300 text-sm mt-2">Global Support Service</div>
           </div>

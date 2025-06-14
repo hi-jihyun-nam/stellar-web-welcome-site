@@ -6,22 +6,22 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-r from-cyan-600/20 to-blue-600/20 blur-3xl"></div>
-      <div className="absolute top-20 left-20 w-72 h-72 bg-cyan-500/30 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-teal-600/20 to-cyan-600/20 blur-3xl"></div>
+      <div className="absolute top-20 left-20 w-72 h-72 bg-teal-500/30 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
       
       <div className="relative z-10 text-center max-w-6xl mx-auto">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-8 animate-fade-in">
-          <Sparkles className="w-4 h-4 text-cyan-400" />
+          <Sparkles className="w-4 h-4 text-teal-400" />
           <span className="text-sm text-white/90">Connecting Korea to the World</span>
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-white via-cyan-200 to-blue-200 bg-clip-text text-transparent mb-6 animate-fade-in">
+        <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-white via-teal-200 to-cyan-200 bg-clip-text text-transparent mb-6 animate-fade-in">
           C&P Ventures
           <br />
-          <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent text-4xl md:text-5xl">
+          <span className="bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent text-4xl md:text-5xl">
             Clinic & People
           </span>
         </h1>
@@ -34,7 +34,7 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
-          <Button size="lg" className="bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white px-8 py-4 text-lg rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/25">
+          <Button size="lg" className="bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white px-8 py-4 text-lg rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-teal-500/25">
             Start Your Journey
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>

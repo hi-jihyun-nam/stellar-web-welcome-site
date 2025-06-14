@@ -1,4 +1,3 @@
-
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -84,20 +83,8 @@ const Pricing = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`relative p-8 rounded-3xl transition-all duration-500 hover:scale-105 shadow-xl ${
-                service.popular
-                  ? "bg-gradient-to-br from-white/15 via-white/25 to-white/15 backdrop-blur-xl border-2 border-cyan-400/60 ring-2 ring-cyan-300/30"
-                  : "bg-gradient-to-br from-white/10 via-white/20 to-white/10 backdrop-blur-xl border border-white/30 hover:border-cyan-300/50"
-              }`}
+              className="relative p-8 rounded-3xl transition-all duration-500 hover:scale-105 shadow-xl bg-gradient-to-br from-white/10 via-white/20 to-white/10 backdrop-blur-xl border border-white/30 hover:border-cyan-300/60 hover:from-cyan-500/10 hover:via-blue-500/20 hover:to-purple-500/10 hover:shadow-2xl hover:shadow-cyan-300/20"
             >
-              {service.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold shadow-lg">
-                    Most Popular
-                  </span>
-                </div>
-              )}
-
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-white mb-3 drop-shadow-lg">{service.name}</h3>
                 <div className="text-4xl font-bold text-cyan-300 mb-3 drop-shadow-lg">
@@ -116,11 +103,7 @@ const Pricing = () => {
               </ul>
 
               <Button
-                className={`w-full py-3 rounded-xl font-semibold transition-all duration-300 ${
-                  service.popular
-                    ? "bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white shadow-lg hover:shadow-xl"
-                    : "bg-gradient-to-r from-white/20 to-white/30 hover:from-white/30 hover:to-white/40 text-white border border-white/30 hover:border-white/50 backdrop-blur-sm"
-                }`}
+                className="w-full py-3 rounded-xl font-semibold transition-all duration-300 bg-gradient-to-r from-white/20 to-white/30 hover:from-cyan-500/30 hover:to-blue-500/40 text-white border border-white/30 hover:border-cyan-300/50 backdrop-blur-sm hover:shadow-lg"
               >
                 {service.price === "Let's Connect" ? "Start Partnership" : "Begin Journey"}
               </Button>

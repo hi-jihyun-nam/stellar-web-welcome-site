@@ -1,5 +1,6 @@
 
 import { Sparkles } from "lucide-react";
+import AnimatedCounter from "./AnimatedCounter";
 
 const Hero = () => {
   return (
@@ -28,22 +29,30 @@ const Hero = () => {
         {/* Highlighted Main Explanation */}
         <div className="bg-gradient-to-r from-white via-teal-50/80 to-white border border-teal-200/50 rounded-3xl p-10 mb-16 animate-fade-in shadow-lg backdrop-blur-sm">
           <p className="text-2xl md:text-3xl text-gray-900 font-semibold mb-6 leading-relaxed">
-            Connecting Korea's premier medical institutions and beauty clinics with the global community.
+            Connecting Korea's premier medical institutions and aesthetic clinics with the global community.
           </p>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-light">
             We transcend traditional boundaries to create personalized bridges of trust, cultural understanding, and medical excellence.
           </p>
         </div>
 
-        {/* Stats */}
+        {/* Animated Stats */}
         <div className="flex flex-col sm:flex-row gap-12 justify-center items-center mt-16 animate-fade-in">
           <div className="text-center group">
-            <div className="text-4xl md:text-5xl font-bold text-teal-600 mb-3 group-hover:scale-105 transition-transform">500+</div>
+            <AnimatedCounter 
+              end={500} 
+              suffix="+"
+              className="text-4xl md:text-5xl font-bold text-teal-600 mb-3 group-hover:scale-105 transition-transform"
+            />
             <div className="text-gray-600 font-medium">Partner Clinics</div>
           </div>
           <div className="hidden sm:block w-px h-16 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
           <div className="text-center group">
-            <div className="text-4xl md:text-5xl font-bold text-teal-600 mb-3 group-hover:scale-105 transition-transform">50+</div>
+            <AnimatedCounter 
+              end={50} 
+              suffix="+"
+              className="text-4xl md:text-5xl font-bold text-teal-600 mb-3 group-hover:scale-105 transition-transform"
+            />
             <div className="text-gray-600 font-medium">Countries Served</div>
           </div>
           <div className="hidden sm:block w-px h-16 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>

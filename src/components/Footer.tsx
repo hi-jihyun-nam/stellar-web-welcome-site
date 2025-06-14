@@ -1,5 +1,5 @@
 
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -26,33 +26,9 @@ const Footer = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
-          {/* Brand Section with Slogan */}
+          {/* Left Column - Brand Section */}
           <div className="text-selectable">
-            <div className="flex items-center gap-8 mb-8">
-              <h3 className="text-4xl font-bold text-gray-900">Kimio</h3>
-              
-              {/* Quick Contact - Made subtle */}
-              <div className="opacity-60 hover:opacity-80 transition-opacity duration-300">
-                <h4 className="text-gray-600 font-medium mb-3 text-sm">Quick Contact</h4>
-                
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2">
-                    <Mail className="w-3 h-3 text-gray-500" />
-                    <span className="text-gray-600 text-xs">info@cpventures.com</span>
-                  </div>
-
-                  <div className="flex items-center gap-2">
-                    <Phone className="w-3 h-3 text-gray-500" />
-                    <span className="text-gray-600 text-xs">+82 2-1234-5678</span>
-                  </div>
-
-                  <div className="flex items-start gap-2">
-                    <MapPin className="w-3 h-3 text-gray-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-600 text-xs leading-tight">Di Tower, 15, Teheran-ro 82-gil, Gangnam-gu, Seoul, Republic of Korea</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <h3 className="text-4xl font-bold text-gray-900 mb-8">Kimio</h3>
             
             <div className="mb-8">
               <p className="text-2xl font-semibold text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
@@ -65,8 +41,22 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Empty space where the old Quick Contact card was */}
-          <div></div>
+          {/* Right Column - Quick Contact */}
+          <div className="text-selectable">
+            <h4 className="text-gray-900 font-semibold mb-6 text-xl">Quick Contact</h4>
+            
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <Mail className="w-5 h-5 text-gray-500" />
+                <span className="text-gray-600">connect@kimio.com</span>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-gray-500 flex-shrink-0 mt-0.5" />
+                <span className="text-gray-600 leading-relaxed">Di Tower, 15, Teheran-ro 82-gil, Gangnam-gu, Seoul, Republic of Korea</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Bottom Section */}

@@ -42,9 +42,14 @@ const AnimatedCounter = ({ end, duration = 2000, suffix = "", className = "" }: 
       
       // Easing function for smooth animation
       const easeOutQuart = 1 - Math.pow(1 - progress, 4);
-      const currentCount = Math.floor(easeOutQuart * end);
+      const currentCount = easeOutQuart * end;
       
-      setCount(currentCount);
+      // Handle decimal numbers properly
+      if (end % 1 !== 0) {
+        setCount(Math.round(currentCount * 10) / 10);
+      } else {
+        setCount(Math.floor(currentCount));
+      }
 
       if (progress < 1) {
         animationFrame = requestAnimationFrame(animate);

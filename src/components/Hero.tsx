@@ -1,4 +1,5 @@
 
+
 import { Sparkles, ArrowRight, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedCounter from "./AnimatedCounter";
@@ -29,8 +30,10 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-16 tracking-tight drop-shadow-sm">
             Global Gateway to
             <br />
+            Korea's Leading Experts in
+            <br />
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent">
-              Korea's Leading Experts in Beauty & Medicine
+              Beauty & Medicine
             </span>
           </h1>
           <p className="text-lg sm:text-xl max-w-6xl mx-auto leading-relaxed px-4 sm:px-6 md:px-8 text-slate-500 font-medium md:text-2xl">
@@ -69,3 +72,4 @@ const Hero = () => {
     </section>;
 };
 export default Hero;
+

@@ -6,67 +6,16 @@ import Philosophy from "@/components/Philosophy";
 import HowWeConnect from "@/components/HowWeConnect";
 import Pricing from "@/components/Pricing";
 import Footer from "@/components/Footer";
-import MouseEffect from "@/components/MouseEffect";
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Index = () => {
-  const { isVisible } = useScrollAnimation();
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50/50 via-white to-purple-50/30 cursor-none">
-      <MouseEffect />
+    <div className="min-h-screen bg-gradient-to-br from-blue-50/50 via-white to-purple-50/30">
       <Header />
-      
-      <div 
-        id="hero" 
-        data-animate 
-        className={`transition-all duration-600 ${
-          isVisible('hero') ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'
-        }`}
-      >
-        <Hero />
-      </div>
-      
-      <div 
-        id="mission" 
-        data-animate 
-        className={`transition-all duration-600 ${
-          isVisible('mission') ? 'opacity-100 translate-y-0 scale-100 shadow-lg' : 'opacity-0 translate-y-20 scale-95'
-        }`}
-      >
-        <Mission />
-      </div>
-      
-      <div 
-        id="philosophy" 
-        data-animate 
-        className={`transition-all duration-600 delay-100 ${
-          isVisible('philosophy') ? 'opacity-100 translate-y-0 scale-100 shadow-lg' : 'opacity-0 translate-y-20 scale-95'
-        }`}
-      >
-        <Philosophy />
-      </div>
-      
-      <div 
-        id="how-we-connect" 
-        data-animate 
-        className={`transition-all duration-600 delay-200 ${
-          isVisible('how-we-connect') ? 'opacity-100 translate-y-0 scale-100 shadow-lg' : 'opacity-0 translate-y-20 scale-95'
-        }`}
-      >
-        <HowWeConnect />
-      </div>
-      
-      <div 
-        id="pricing" 
-        data-animate 
-        className={`transition-all duration-600 delay-300 ${
-          isVisible('pricing') ? 'opacity-100 translate-y-0 scale-100 shadow-lg' : 'opacity-0 translate-y-20 scale-95'
-        }`}
-      >
-        <Pricing />
-      </div>
-      
+      <Hero />
+      <Mission />
+      <Philosophy />
+      <HowWeConnect />
+      <Pricing />
       <Footer />
     </div>    
   );

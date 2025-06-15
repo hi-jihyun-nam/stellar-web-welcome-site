@@ -1,4 +1,3 @@
-
 import { Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
@@ -28,7 +27,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
           {/* Left Column - Brand Section */}
           <div className="text-selectable">
-            <h3 className="text-4xl font-bold text-gray-900 mb-8">Kimio</h3>
+            <h3 className="text-4xl font-bold text-gray-900 mb-8 font-poppins">Kimio</h3>
             
             <div className="mb-8">
               <p className="text-2xl font-semibold text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">

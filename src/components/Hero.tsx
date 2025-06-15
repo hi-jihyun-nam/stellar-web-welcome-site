@@ -27,7 +27,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-16 tracking-tight drop-shadow-sm">
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-16 tracking-tight drop-shadow-sm font-poppins">
             <span className="bg-gradient-to-br from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent bg-[length:400%_400%] animate-[gradient-shift_6s_ease-in-out_infinite]">
               Global Gateway
             </span> to
@@ -38,7 +38,7 @@ const Hero = () => {
               Beauty & Medicine
             </span>
           </h1>
-          <p className="text-lg sm:text-xl max-w-6xl mx-auto leading-relaxed px-4 sm:px-6 md:px-8 text-slate-500 font-medium md:text-2xl">
+          <p className="text-lg sm:text-xl max-w-6xl mx-auto leading-relaxed px-4 sm:px-6 md:px-8 text-slate-500 font-medium md:text-2xl font-poppins">
             We connect Korea's premier medical institutions and aesthetic clinics with the world. 
             <span className="block mt-4 sm:mt-5 md:mt-6">
               With a keen understanding of global trends and a dedication to aesthetic refinement, we craft services that resonate with today's global audience.

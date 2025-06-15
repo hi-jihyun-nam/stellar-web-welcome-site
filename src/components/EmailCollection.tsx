@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -57,7 +56,7 @@ const EmailCollection = () => {
             </div>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight font-poppins">
             Want to hear about our
             <br />
             <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
@@ -65,7 +64,7 @@ const EmailCollection = () => {
             </span>
           </h2>
           
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto font-light leading-relaxed mb-12">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto font-light leading-relaxed mb-12 font-poppins">
             Be the first to discover how artificial intelligence is revolutionizing healthcare connections. 
             Join our exclusive community and stay ahead of the curve.
           </p>

@@ -1,4 +1,3 @@
-
 import { Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
@@ -35,7 +34,7 @@ const Footer = () => {
             />
             
             <div className="mb-8">
-              <p className="text-2xl font-semibold text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
+              <p className="text-2xl font-semibold text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text font-poppins">
                 Blending Inspiration to Weave Connection
               </p>
             </div>

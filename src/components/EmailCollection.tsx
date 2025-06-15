@@ -96,7 +96,7 @@ const EmailCollection = () => {
               
               <Button 
                 type="submit"
-                className="w-full h-12 text-lg font-semibold bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300"
+                className="w-full h-12 text-lg font-semibold bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 font-poppins"
               >
                 <Mail className="w-5 h-5 mr-2" />
                 Get Early Access

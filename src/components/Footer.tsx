@@ -28,7 +28,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
           {/* Left Column - Brand Section */}
           <div className="text-selectable">
-            <h3 className="text-4xl font-bold text-gray-900 mb-8 font-poppins">Kimix</h3>
+            <img 
+              src="/lovable-uploads/550925a2-deef-429f-9bbc-e00c91e7c26a.png" 
+              alt="Kimix" 
+              className="h-12 w-auto mb-8"
+            />
             
             <div className="mb-8">
               <p className="text-2xl font-semibold text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">

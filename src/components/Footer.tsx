@@ -1,4 +1,5 @@
 
+
 import { Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
@@ -28,7 +29,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
           {/* Left Column - Brand Section */}
           <div className="text-selectable">
-            <h3 className="text-4xl font-bold text-gray-900 mb-8 font-poppins">Kimsay</h3>
+            <h3 className="text-4xl font-bold text-gray-900 mb-8 font-poppins">Kimix</h3>
             
             <div className="mb-8">
               <p className="text-2xl font-semibold text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
@@ -48,7 +49,7 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-gray-500" />
-                <span className="text-gray-600">connect@kimsay.com</span>
+                <span className="text-gray-600">connect@kimix.com</span>
               </div>
 
               <div className="flex items-start gap-3">
@@ -62,7 +63,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="pt-8 border-t border-gray-300/50 text-center">
           <p className="text-gray-600 font-light text-lg text-selectable">
-            © 2024 Kimsay. All rights reserved.
+            © 2024 Kimix. All rights reserved.
           </p>
         </div>
       </div>
@@ -71,3 +72,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

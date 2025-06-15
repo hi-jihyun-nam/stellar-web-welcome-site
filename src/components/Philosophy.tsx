@@ -1,6 +1,11 @@
+
 import { MessageCircle, Shield, Zap } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
+
 const Philosophy = () => {
-  return <section className="py-32 px-6 relative bg-gradient-to-br from-gray-50 via-white to-blue-50/30 overflow-hidden">
+  const { ref, isVisible } = useScrollReveal();
+
+  return <section ref={ref} className={`py-32 px-6 relative bg-gradient-to-br from-gray-50 via-white to-blue-50/30 overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       {/* Animated gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-gray-100/30 via-blue-100/40 to-purple-100/30 animate-pulse"></div>
       

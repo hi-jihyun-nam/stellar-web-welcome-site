@@ -2,9 +2,12 @@
 import { Sparkles, ArrowRight, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedCounter from "./AnimatedCounter";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const Hero = () => {
-  return <section className="relative min-h-screen flex items-center justify-center px-6 py-32 overflow-hidden">
+  const { ref, isVisible } = useScrollReveal();
+
+  return <section ref={ref} className={`relative min-h-screen flex items-center justify-center px-6 py-32 overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       {/* Enhanced 3D Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50"></div>
       

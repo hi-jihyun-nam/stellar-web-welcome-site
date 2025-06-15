@@ -4,10 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Mail, Sparkles } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const EmailCollection = () => {
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const { ref, isVisible } = useScrollReveal();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -25,7 +27,7 @@ const EmailCollection = () => {
   };
 
   return (
-    <section className="py-32 px-6 relative bg-gradient-to-br from-indigo-50 via-white to-purple-50 overflow-hidden">
+    <section ref={ref} className={`py-32 px-6 relative bg-gradient-to-br from-indigo-50 via-white to-purple-50 overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-to-r from-indigo-100/20 via-purple-100/30 to-blue-100/20 animate-pulse"></div>
       

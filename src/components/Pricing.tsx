@@ -1,5 +1,8 @@
+
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
+
 const b2cService = {
   name: "Complete Care",
   price: "Bespoke",
@@ -13,7 +16,10 @@ const b2bService = {
   description: "For healthcare institutions",
   features: ["Global market expansion strategy", "International client acquisition", "Premium brand positioning", "Cultural adaptation expertise", "Sophisticated marketing campaigns", "Long-term partnership development", "Advanced analytics & insights"]
 };
+
 const Pricing = () => {
+  const { ref, isVisible } = useScrollReveal();
+
   const handleEmailContact = (subject: string) => {
     const emailBody = `Hello Kimio team,
 
@@ -25,8 +31,9 @@ Best regards`;
     const mailtoLink = `mailto:info@cpventures.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
     window.location.href = mailtoLink;
   };
+  
   return (
-    <section className="py-32 px-6 relative bg-gradient-to-b from-purple-50/20 via-gray-50 to-blue-50/30 overflow-hidden">
+    <section ref={ref} className={`py-32 px-6 relative bg-gradient-to-b from-purple-50/20 via-gray-50 to-blue-50/30 overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-to-r from-teal-100/20 via-blue-100/30 to-purple-100/20 animate-pulse"></div>
       

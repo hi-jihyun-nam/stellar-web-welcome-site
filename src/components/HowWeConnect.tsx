@@ -1,4 +1,6 @@
+
 import { Heart, MessageCircle, Shield, Users2, Globe, Star } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const connectionPoints = [
   {
@@ -40,8 +42,10 @@ const connectionPoints = [
 ];
 
 const HowWeConnect = () => {
+  const { ref, isVisible } = useScrollReveal();
+
   return (
-    <section className="py-32 px-6 relative bg-gradient-to-br from-blue-50 via-white to-purple-50 overflow-hidden">
+    <section ref={ref} className={`py-32 px-6 relative bg-gradient-to-br from-blue-50 via-white to-purple-50 overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       {/* Animated gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-100/30 via-purple-100/40 to-teal-100/30 animate-pulse"></div>
       

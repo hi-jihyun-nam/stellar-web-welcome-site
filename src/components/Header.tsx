@@ -8,9 +8,6 @@ const Header = () => {
           <h1 className="text-2xl font-bold text-gray-900 font-poppins">
             Kimix
           </h1>
-          <span className="ml-3 text-lg text-gray-600 font-medium font-poppins">
-            Kim + Innovation
-          </span>
         </div>
       </div>
     </header>

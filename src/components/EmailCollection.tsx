@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -26,15 +27,15 @@ const EmailCollection = () => {
   };
 
   return (
-    <section ref={ref} className={`py-32 px-6 relative bg-gradient-to-br from-indigo-50 via-white to-purple-50 overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-      {/* Background effects */}
+    <section className="py-32 px-6 relative bg-gradient-to-br from-indigo-50 via-white to-purple-50 overflow-hidden">
+      {/* Background effects - Always visible */}
       <div className="absolute inset-0 bg-gradient-to-r from-indigo-100/20 via-purple-100/30 to-blue-100/20 animate-pulse"></div>
       
-      {/* 3D floating elements */}
+      {/* 3D floating elements - Always visible */}
       <div className="absolute top-1/4 right-1/4 w-80 h-80 bg-gradient-to-br from-indigo-200/40 to-purple-300/50 rounded-full blur-3xl animate-bounce [animation-duration:8s]"></div>
       <div className="absolute bottom-1/3 left-1/4 w-64 h-64 bg-gradient-to-br from-purple-200/30 to-blue-200/40 rounded-full blur-2xl animate-bounce [animation-duration:10s] [animation-delay:3s]"></div>
       
-      {/* Grid pattern overlay */}
+      {/* Grid pattern overlay - Always visible */}
       <div className="absolute inset-0 opacity-5">
         <svg width="100%" height="100%" className="absolute inset-0">
           <defs>
@@ -46,7 +47,8 @@ const EmailCollection = () => {
         </svg>
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto text-center">
+      {/* Content with fade-in effect */}
+      <div ref={ref} className={`relative z-10 max-w-4xl mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
         <div className="mb-12">
           <div className="flex justify-center mb-8">
             <div className="bg-white/80 backdrop-blur-md border border-gray-200/50 rounded-full shadow-lg flex items-center gap-3 px-6 py-3">

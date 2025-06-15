@@ -32,15 +32,15 @@ Best regards`;
   };
   
   return (
-    <section ref={ref} className={`py-32 px-6 relative bg-gradient-to-b from-purple-50/20 via-gray-50 to-blue-50/30 overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-      {/* Background effects */}
+    <section className="py-32 px-6 relative bg-gradient-to-b from-purple-50/20 via-gray-50 to-blue-50/30 overflow-hidden">
+      {/* Background effects - Always visible */}
       <div className="absolute inset-0 bg-gradient-to-r from-teal-100/20 via-blue-100/30 to-purple-100/20 animate-pulse"></div>
       
-      {/* 3D floating elements */}
+      {/* 3D floating elements - Always visible */}
       <div className="absolute top-1/5 left-1/5 w-72 h-72 bg-gradient-to-br from-teal-200/30 to-cyan-300/40 rounded-full blur-3xl animate-bounce [animation-duration:10s]"></div>
       <div className="absolute bottom-1/4 right-1/3 w-48 h-48 bg-gradient-to-br from-purple-200/40 to-blue-300/30 rounded-full blur-2xl animate-bounce [animation-duration:8s] [animation-delay:4s]"></div>
       
-      {/* Grid pattern overlay */}
+      {/* Grid pattern overlay - Always visible */}
       <div className="absolute inset-0 opacity-5">
         <svg width="100%" height="100%" className="absolute inset-0">
           <defs>
@@ -52,7 +52,8 @@ Best regards`;
         </svg>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto">
+      {/* Content with fade-in effect */}
+      <div ref={ref} className={`relative z-10 max-w-7xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight font-poppins">Service Portfolio</h2>
           <p className="text-xl text-gray-700 max-w-4xl mx-auto font-light leading-relaxed font-poppins">
@@ -126,4 +127,5 @@ Best regards`;
     </section>
   );
 };
+
 export default Pricing;

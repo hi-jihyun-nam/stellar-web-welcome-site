@@ -4,15 +4,16 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 const Philosophy = () => {
   const { ref, isVisible } = useScrollReveal();
 
-  return <section ref={ref} className={`py-32 px-6 relative bg-gradient-to-br from-gray-50 via-white to-blue-50/30 overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-      {/* Animated gradient overlay */}
+  return (
+    <section className="py-32 px-6 relative bg-gradient-to-br from-gray-50 via-white to-blue-50/30 overflow-hidden">
+      {/* Animated gradient overlay - Always visible */}
       <div className="absolute inset-0 bg-gradient-to-r from-gray-100/30 via-blue-100/40 to-purple-100/30 animate-pulse"></div>
       
-      {/* 3D floating elements */}
+      {/* 3D floating elements - Always visible */}
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-gray-200/40 to-blue-300/50 rounded-full blur-3xl animate-bounce [animation-duration:6s]"></div>
       <div className="absolute bottom-1/3 left-1/4 w-80 h-80 bg-gradient-to-br from-blue-200/50 to-purple-200/40 rounded-full blur-2xl animate-bounce [animation-delay:2s]"></div>
       
-      {/* Grid pattern overlay */}
+      {/* Grid pattern overlay - Always visible */}
       <div className="absolute inset-0 opacity-5">
         <svg width="100%" height="100%" className="absolute inset-0">
           <defs>
@@ -24,7 +25,8 @@ const Philosophy = () => {
         </svg>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto">
+      {/* Content with fade-in effect */}
+      <div ref={ref} className={`relative z-10 max-w-7xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight drop-shadow-sm font-poppins">Philosophy</h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto font-light leading-relaxed font-poppins">
@@ -108,6 +110,8 @@ const Philosophy = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Philosophy;

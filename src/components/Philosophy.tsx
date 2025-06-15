@@ -1,17 +1,16 @@
-
 import { MessageCircle, Shield, Zap } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const Philosophy = () => {
   const { ref, isVisible } = useScrollReveal();
 
-  return <section ref={ref} className={`py-32 px-6 relative bg-gradient-to-br from-gray-50 via-white to-blue-50/30 overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+  return <section ref={ref} className={`py-32 px-6 relative bg-gradient-to-br from-gray-50 via-white to-blue-50/30 overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
       {/* Animated gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-gray-100/30 via-blue-100/40 to-purple-100/30 animate-pulse"></div>
       
       {/* 3D floating elements */}
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-gray-200/40 to-blue-300/50 rounded-full blur-3xl animate-bounce [animation-duration:6s]"></div>
-      <div className="absolute bottom-1/3 left-1/4 w-80 h-80 bg-gradient-to-br from-blue-200/50 to-purple-200/40 rounded-full blur-2xl animate-bounce [animation-duration:8s] [animation-delay:2s]"></div>
+      <div className="absolute bottom-1/3 left-1/4 w-80 h-80 bg-gradient-to-br from-blue-200/50 to-purple-200/40 rounded-full blur-2xl animate-bounce [animation-delay:2s]"></div>
       
       {/* Grid pattern overlay */}
       <div className="absolute inset-0 opacity-5">

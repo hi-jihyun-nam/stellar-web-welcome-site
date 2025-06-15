@@ -1,4 +1,3 @@
-
 import { Mail, MapPin } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
@@ -6,13 +5,13 @@ const Footer = () => {
   const { ref, isVisible } = useScrollReveal();
 
   return (
-    <footer ref={ref} className={`py-20 px-6 relative bg-gradient-to-br from-gray-100 via-blue-50 to-purple-50 overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+    <footer ref={ref} className={`py-20 px-6 relative bg-gradient-to-br from-gray-100 via-blue-50 to-purple-50 overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
       {/* Enhanced background effects */}
       <div className="absolute inset-0 bg-gradient-to-r from-cyan-100/20 via-purple-100/30 to-teal-100/20 animate-pulse"></div>
       
       {/* 3D floating elements */}
       <div className="absolute top-1/4 left-1/5 w-40 h-40 bg-gradient-to-br from-cyan-200/30 to-blue-300/40 rounded-full blur-3xl animate-bounce [animation-duration:10s]"></div>
-      <div className="absolute bottom-1/3 right-1/4 w-32 h-32 bg-gradient-to-br from-purple-200/35 to-pink-300/30 rounded-full blur-2xl animate-bounce [animation-duration:12s] [animation-delay:3s]"></div>
+      <div className="absolute bottom-1/3 right-1/4 w-32 h-32 bg-gradient-to-br from-purple-200/35 to-pink-300/30 rounded-full blur-2xl animate-bounce [animation-delay:3s]"></div>
       <div className="absolute top-1/2 left-1/2 w-24 h-24 bg-gradient-to-br from-teal-200/25 to-cyan-300/35 rounded-full blur-xl animate-bounce [animation-duration:8s] [animation-delay:6s]"></div>
       
       {/* Enhanced grid pattern overlay */}

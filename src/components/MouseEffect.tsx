@@ -22,6 +22,20 @@ const MouseEffect = () => {
         />
       </div>
 
+      {/* Small hovering blue circle */}
+      <div
+        className="fixed pointer-events-none z-45"
+        style={{
+          left: `${mousePosition.x}px`,
+          top: `${mousePosition.y}px`,
+          transform: 'translate(-50%, -50%)',
+        }}
+      >
+        <div className={`w-3 h-3 bg-blue-400 rounded-full transition-all duration-300 ${
+          isMoving ? 'scale-125 opacity-80' : 'scale-100 opacity-60'
+        } animate-pulse`} />
+      </div>
+
       {/* Trailing circles - blue tones */}
       <div
         className="fixed pointer-events-none z-40"

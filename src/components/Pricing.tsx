@@ -48,8 +48,8 @@ Best regards`;
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight">Service Portfolio</h2>
-          <p className="text-xl text-gray-700 max-w-4xl mx-auto font-light leading-relaxed">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight font-poppins">Service Portfolio</h2>
+          <p className="text-xl text-gray-700 max-w-4xl mx-auto font-light leading-relaxed font-poppins">
             We empower clients to make confident healthcare decisions while helping clinics authentically communicate their distinctive value
           </p>
         </div>

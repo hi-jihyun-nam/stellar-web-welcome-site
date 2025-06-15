@@ -1,4 +1,3 @@
-
 import { MessageCircle, Shield, Zap } from "lucide-react";
 const Philosophy = () => {
   return <section className="py-32 px-6 relative bg-gradient-to-br from-gray-50 via-white to-blue-50/30 overflow-hidden">
@@ -23,17 +22,17 @@ const Philosophy = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight drop-shadow-sm">Philosophy</h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto font-light leading-relaxed">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight drop-shadow-sm font-poppins">Philosophy</h2>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto font-light leading-relaxed font-poppins">
             Marketing as the Art of Connection
           </p>
         </div>
 
         <div className="mb-16">
-          <h3 className="text-3xl font-bold text-gray-900 mb-8 text-left">
+          <h3 className="text-3xl font-bold text-gray-900 mb-8 text-left font-poppins">
             Connection Over Exposure
           </h3>
-          <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+          <div className="space-y-6 text-lg text-gray-700 leading-relaxed font-poppins">
             <p>
               We don't see marketing as just exposure or advertising. We see it as the art of making the right connection. No matter how great a medical service is, it means nothing if it doesn't reach the person who truly needs it.
             </p>

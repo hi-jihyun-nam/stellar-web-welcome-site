@@ -39,8 +39,8 @@ const Mission = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight drop-shadow-sm">Mission</h2>
-          <p className="text-xl text-gray-700 max-w-4xl mx-auto font-light leading-relaxed">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight drop-shadow-sm font-poppins">Mission</h2>
+          <p className="text-xl text-gray-700 max-w-4xl mx-auto font-light leading-relaxed font-poppins">
             We go beyond traditional travel coordination by crafting bespoke treatment pathways built around individual beauty aspirations.
             <br />
             We break cultural barriers and build heartfelt connections across people and cultures through technology.

@@ -64,10 +64,10 @@ const HowWeConnect = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight drop-shadow-sm">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight drop-shadow-sm font-poppins">
             How We Connect
           </h2>
-          <p className="text-xl text-gray-700 max-w-4xl mx-auto font-light leading-relaxed">
+          <p className="text-xl text-gray-700 max-w-4xl mx-auto font-light leading-relaxed font-poppins">
             We don't see marketing as just exposure or advertising. We see it as the art of making the right connection.
           </p>
         </div>

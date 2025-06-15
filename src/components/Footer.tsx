@@ -38,7 +38,7 @@ const Footer = () => {
                 Blending Inspiration to Weave Connection
               </p>
             </div>
-            <p className="text-gray-600 mb-8 max-w-lg leading-relaxed font-light text-lg">
+            <p className="text-gray-600 mb-8 max-w-lg leading-relaxed font-light text-lg font-poppins">
               We connect Korea's premier medical institutions and aesthetic clinics with the global community, 
               building sophisticated bridges of trust, cultural understanding, and medical excellence.
             </p>

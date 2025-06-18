@@ -1,5 +1,12 @@
 
 import { Star, Heart } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const PopularSalons = () => {
   const salonData = {
@@ -56,12 +63,26 @@ const PopularSalons = () => {
     <div className="px-4 lg:px-8 py-8 lg:py-12 bg-gray-50">
       <div className="container mx-auto max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
-          {/* 쿠폰 다운로드 Top 3 */}
+          {/* 쿠폰 다운로드 Top 3 - 캐러셀 형태 */}
           <div className="space-y-6">
             <h2 className="text-lg lg:text-xl font-bold text-gray-900 flex items-center">
               📱 쿠폰 다운로드 Top 3
             </h2>
-            <SalonCard title="쿠폰 다운로드를 가장 높은 매장 Top 3" rank={1} />
+            <Carousel className="w-full">
+              <CarouselContent>
+                <CarouselItem>
+                  <SalonCard title="쿠폰 다운로드를 가장 높은 매장 1위" rank={1} />
+                </CarouselItem>
+                <CarouselItem>
+                  <SalonCard title="쿠폰 다운로드를 가장 높은 매장 2위" rank={2} />
+                </CarouselItem>
+                <CarouselItem>
+                  <SalonCard title="쿠폰 다운로드를 가장 높은 매장 3위" rank={3} />
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="hidden lg:flex" />
+              <CarouselNext className="hidden lg:flex" />
+            </Carousel>
           </div>
 
           {/* 지금 당신 데모그래픽 Top 5 */}

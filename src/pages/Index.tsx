@@ -1,8 +1,14 @@
 
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import AdminShopManagement from "@/components/AdminShopManagement";
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
-      {/* Blank page - ready for new design ideas */}
+      <Header />
+      <AdminShopManagement />
+      <Footer />
     </div>
   );
 };

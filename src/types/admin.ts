@@ -27,10 +27,20 @@ export interface CustomerReview {
   thumbnailUrl?: string;
   likeCount: number;
   isLocked: boolean;
+  groupId?: string; // 같은 리뷰의 다른 언어 버전들을 그룹핑
+  isTranslated?: boolean; // 번역된 리뷰인지 여부
+  originalLanguage?: string; // 원본 언어
 }
 
 export interface PhotoSection {
   type: 'representative' | 'header1' | 'content1' | 'content2';
   name: string;
   description: string;
+}
+
+export interface ReviewGroup {
+  groupId: string;
+  reviews: CustomerReview[];
+  originalReview: CustomerReview;
+  translations: CustomerReview[];
 }

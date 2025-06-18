@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -40,6 +41,7 @@ const AdminDashboard = () => {
   ];
 
   const mockReviews: CustomerReview[] = [
+    // 그룹 1: 한국어 원본 + 번역본들
     {
       id: '1',
       shopId: '1',
@@ -51,8 +53,44 @@ const AdminDashboard = () => {
       photoType: 'after',
       thumbnailUrl: '/placeholder.svg',
       likeCount: 12,
-      isLocked: false
+      isLocked: false,
+      groupId: 'group1',
+      isTranslated: false,
+      originalLanguage: 'ko'
     },
+    {
+      id: '1-en',
+      shopId: '1',
+      createdDate: '2024-01-15',
+      author: 'user123',
+      rating: 5,
+      content: 'Really satisfied with the treatment. The staff was kind and the results are amazing!',
+      language: 'en',
+      photoType: 'after',
+      thumbnailUrl: '/placeholder.svg',
+      likeCount: 12,
+      isLocked: false,
+      groupId: 'group1',
+      isTranslated: true,
+      originalLanguage: 'ko'
+    },
+    {
+      id: '1-ja',
+      shopId: '1',
+      createdDate: '2024-01-15',
+      author: 'user123',
+      rating: 5,
+      content: '本当に満足できる施術でした。スタッフの方も親切で、結果もとても良いです！',
+      language: 'ja',
+      photoType: 'after',
+      thumbnailUrl: '/placeholder.svg',
+      likeCount: 12,
+      isLocked: false,
+      groupId: 'group1',
+      isTranslated: true,
+      originalLanguage: 'ko'
+    },
+    // 그룹 2: 영어 원본 + 번역본들
     {
       id: '2',
       shopId: '1',
@@ -62,8 +100,40 @@ const AdminDashboard = () => {
       content: 'Amazing service! Very professional and clean facility.',
       language: 'en',
       likeCount: 8,
-      isLocked: true
+      isLocked: true,
+      groupId: 'group2',
+      isTranslated: false,
+      originalLanguage: 'en'
     },
+    {
+      id: '2-ko',
+      shopId: '1',
+      createdDate: '2024-01-10',
+      author: 'beauty_lover',
+      rating: 4,
+      content: '놀라운 서비스! 매우 전문적이고 깨끗한 시설입니다.',
+      language: 'ko',
+      likeCount: 8,
+      isLocked: true,
+      groupId: 'group2',
+      isTranslated: true,
+      originalLanguage: 'en'
+    },
+    {
+      id: '2-ja',
+      shopId: '1',
+      createdDate: '2024-01-10',
+      author: 'beauty_lover',
+      rating: 4,
+      content: '素晴らしいサービス！とても専門的で清潔な施設です。',
+      language: 'ja',
+      likeCount: 8,
+      isLocked: true,
+      groupId: 'group2',
+      isTranslated: true,
+      originalLanguage: 'en'
+    },
+    // 독립 리뷰 (번역 없음)
     {
       id: '3',
       shopId: '1',
@@ -75,7 +145,10 @@ const AdminDashboard = () => {
       photoType: 'before',
       thumbnailUrl: '/placeholder.svg',
       likeCount: 15,
-      isLocked: false
+      isLocked: false,
+      groupId: 'group3',
+      isTranslated: false,
+      originalLanguage: 'ja'
     }
   ];
 

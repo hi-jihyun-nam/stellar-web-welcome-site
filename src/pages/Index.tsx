@@ -1,8 +1,10 @@
 
-import { StudioDashboard } from "@/components/StudioDashboard";
-
 const Index = () => {
-  return <StudioDashboard />;
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Blank page - ready for new design ideas */}
+    </div>
+  );
 };
 
 export default Index;

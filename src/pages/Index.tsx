@@ -1,16 +1,8 @@
 
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import ShopContentManager from "@/components/ShopContentManager";
+import Dashboard from "@/components/Dashboard";
 
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <ShopContentManager />
-      <Footer />
-    </div>
-  );
+  return <Dashboard />;
 };
 
 export default Index;

@@ -1,10 +1,8 @@
 
+import AdminDashboard from '@/components/AdminDashboard';
+
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-white">
-      {/* Blank page - ready for new design ideas */}
-    </div>
-  );
+  return <AdminDashboard />;
 };
 
 export default Index;

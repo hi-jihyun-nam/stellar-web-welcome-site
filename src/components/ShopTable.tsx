@@ -9,18 +9,20 @@ import {
   TableRow 
 } from '@/components/ui/table';
 import { Button } from '@/components/ui/button';
-import { Edit, Check, X } from 'lucide-react';
-import { Shop } from '@/types/shop';
+import { Edit } from 'lucide-react';
+import { Shop, MultiLanguageContent } from '@/types/shop';
 import { DetailModal } from './DetailModal';
 
 interface ShopTableProps {
   shops: Shop[];
+  currentLanguage: string;
   onEdit: (shop: Shop) => void;
   onToggleStatus: (shopId: string) => void;
 }
 
 export const ShopTable: React.FC<ShopTableProps> = ({ 
   shops, 
+  currentLanguage,
   onEdit, 
   onToggleStatus 
 }) => {
@@ -39,8 +41,15 @@ export const ShopTable: React.FC<ShopTableProps> = ({
     return text.substring(0, maxLength) + '...';
   };
 
+  const getLocalizedText = (content: MultiLanguageContent): string => {
+    return content[currentLanguage as keyof MultiLanguageContent] || content.ko || '';
+  };
+
   const formatServices = (services: any[]) => {
-    return services.map(s => `${s.name} ${s.price.toLocaleString()}원`).join(', ');
+    return services.map(s => {
+      const serviceName = getLocalizedText(s.name);
+      return `${serviceName} ${s.price.toLocaleString()}원`;
+    }).join(', ');
   };
 
   const handleDetailClick = (content: string, title: string) => {
@@ -69,56 +78,62 @@ export const ShopTable: React.FC<ShopTableProps> = ({
             </TableRow>
           </TableHeader>
           <TableBody>
-            {shops.map((shop) => (
-              <TableRow key={shop.id} className="hover:bg-gray-50">
-                <TableCell className="font-medium">{shop.name}</TableCell>
-                <TableCell>{shop.address}</TableCell>
-                <TableCell>{shop.operatingTime}</TableCell>
-                <TableCell>{shop.designer}</TableCell>
-                <TableCell>
-                  <div className="flex gap-1">
-                    {shop.languages.map(lang => (
-                      <span key={lang} className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">
-                        {lang}
-                      </span>
-                    ))}
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <button
-                    onClick={() => handleDetailClick(shop.description, '소개글')}
-                    className="text-left hover:text-blue-600 cursor-pointer"
-                  >
-                    {truncateText(shop.description)}
-                  </button>
-                </TableCell>
-                <TableCell>
-                  <button
-                    onClick={() => handleDetailClick(formatServices(shop.services), '시술 리스트/가격')}
-                    className="text-left hover:text-blue-600 cursor-pointer"
-                  >
-                    {truncateText(formatServices(shop.services))}
-                  </button>
-                </TableCell>
-                <TableCell>
-                  <button
-                    onClick={() => onToggleStatus(shop.id)}
-                    className="text-2xl hover:scale-110 transition-transform"
-                  >
-                    {shop.isActive ? '✅' : '⛔'}
-                  </button>
-                </TableCell>
-                <TableCell>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => onEdit(shop)}
-                  >
-                    <Edit className="h-4 w-4" />
-                  </Button>
-                </TableCell>
-              </TableRow>
-            ))}
+            {shops.map((shop) => {
+              const shopName = getLocalizedText(shop.name);
+              const description = getLocalizedText(shop.description);
+              const servicesText = formatServices(shop.services);
+
+              return (
+                <TableRow key={shop.id} className="hover:bg-gray-50">
+                  <TableCell className="font-medium">{shopName}</TableCell>
+                  <TableCell>{shop.address}</TableCell>
+                  <TableCell>{shop.operatingTime}</TableCell>
+                  <TableCell>{shop.designer}</TableCell>
+                  <TableCell>
+                    <div className="flex gap-1">
+                      {shop.languages.map(lang => (
+                        <span key={lang} className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">
+                          {lang}
+                        </span>
+                      ))}
+                    </div>
+                  </TableCell>
+                  <TableCell>
+                    <button
+                      onClick={() => handleDetailClick(description, '소개글')}
+                      className="text-left hover:text-blue-600 cursor-pointer"
+                    >
+                      {truncateText(description)}
+                    </button>
+                  </TableCell>
+                  <TableCell>
+                    <button
+                      onClick={() => handleDetailClick(servicesText, '시술 리스트/가격')}
+                      className="text-left hover:text-blue-600 cursor-pointer"
+                    >
+                      {truncateText(servicesText)}
+                    </button>
+                  </TableCell>
+                  <TableCell>
+                    <button
+                      onClick={() => onToggleStatus(shop.id)}
+                      className="text-2xl hover:scale-110 transition-transform"
+                    >
+                      {shop.isActive ? '✅' : '⛔'}
+                    </button>
+                  </TableCell>
+                  <TableCell>
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={() => onEdit(shop)}
+                    >
+                      <Edit className="h-4 w-4" />
+                    </Button>
+                  </TableCell>
+                </TableRow>
+              );
+            })}
           </TableBody>
         </Table>
       </div>

@@ -4,14 +4,26 @@ export interface Service {
   price: number;
 }
 
+export interface MultiLanguageContent {
+  ko: string;
+  en: string;
+  ja: string;
+  cn?: string;
+}
+
+export interface MultiLanguageService {
+  name: MultiLanguageContent;
+  price: number;
+}
+
 export interface Shop {
   id: string;
-  name: string;
+  name: MultiLanguageContent;
   address: string;
   operatingTime: string;
   designer: string;
   languages: string[];
-  description: string;
-  services: Service[];
+  description: MultiLanguageContent;
+  services: MultiLanguageService[];
   isActive: boolean;
 }

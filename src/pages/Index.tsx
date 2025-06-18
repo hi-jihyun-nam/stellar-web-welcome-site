@@ -1,13 +1,13 @@
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import AdminShopManagement from "@/components/AdminShopManagement";
+import ShopContentManager from "@/components/ShopContentManager";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <AdminShopManagement />
+      <ShopContentManager />
       <Footer />
     </div>
   );

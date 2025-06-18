@@ -1,8 +1,8 @@
 
-import Dashboard from "@/components/Dashboard";
+import ContentManagement from "@/components/ContentManagement";
 
 const Index = () => {
-  return <Dashboard />;
+  return <ContentManagement />;
 };
 
 export default Index;

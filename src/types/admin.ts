@@ -22,6 +22,7 @@ export interface CustomerReview {
   author: string;
   rating: number;
   content: string;
+  language: 'ko' | 'en' | 'ja' | 'zh' | 'vi' | 'th' | 'other';
   photoType?: 'before' | 'after';
   thumbnailUrl?: string;
   likeCount: number;

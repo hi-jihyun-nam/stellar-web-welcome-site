@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -48,6 +47,7 @@ const AdminDashboard = () => {
       author: 'user123',
       rating: 5,
       content: '정말 만족스러운 시술이었습니다. 직원분들도 친절하고 결과도 너무 좋아요!',
+      language: 'ko',
       photoType: 'after',
       thumbnailUrl: '/placeholder.svg',
       likeCount: 12,
@@ -59,9 +59,23 @@ const AdminDashboard = () => {
       createdDate: '2024-01-10',
       author: 'beauty_lover',
       rating: 4,
-      content: '깔끔하고 좋았어요. 추천합니다.',
+      content: 'Amazing service! Very professional and clean facility.',
+      language: 'en',
       likeCount: 8,
       isLocked: true
+    },
+    {
+      id: '3',
+      shopId: '1',
+      createdDate: '2024-01-08',
+      author: 'tanaka_san',
+      rating: 5,
+      content: 'とても満足しています。スタッフの対応も素晴らしかったです。',
+      language: 'ja',
+      photoType: 'before',
+      thumbnailUrl: '/placeholder.svg',
+      likeCount: 15,
+      isLocked: false
     }
   ];
 

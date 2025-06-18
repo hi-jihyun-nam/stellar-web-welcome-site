@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -6,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { Star, Heart, Lock, Plus, Filter, Eye } from 'lucide-react';
+import { Star, Heart, Lock, Plus, Filter, Eye, Globe } from 'lucide-react';
 import { CustomerReview } from '@/types/admin';
 
 interface ReviewManagementSectionProps {
@@ -20,7 +19,24 @@ const ReviewManagementSection: React.FC<ReviewManagementSectionProps> = ({
 }) => {
   const [editingLikes, setEditingLikes] = useState<{ [key: string]: number }>({});
   const [filterType, setFilterType] = useState<string>('all');
+  const [languageFilter, setLanguageFilter] = useState<string>('all');
   const [sortBy, setSortBy] = useState<string>('date');
+
+  const languageOptions = [
+    { value: 'all', label: '전체 언어' },
+    { value: 'ko', label: '한국어' },
+    { value: 'en', label: 'English' },
+    { value: 'ja', label: '日本語' },
+    { value: 'zh', label: '中文' },
+    { value: 'vi', label: 'Tiếng Việt' },
+    { value: 'th', label: 'ไทย' },
+    { value: 'other', label: '기타' }
+  ];
+
+  const getLanguageLabel = (lang: string) => {
+    const option = languageOptions.find(opt => opt.value === lang);
+    return option ? option.label : lang;
+  };
 
   const handleLikeChange = (reviewId: string, newValue: number) => {
     setEditingLikes(prev => ({
@@ -54,9 +70,14 @@ const ReviewManagementSection: React.FC<ReviewManagementSectionProps> = ({
   };
 
   const filteredReviews = reviews.filter(review => {
-    if (filterType === 'photo') return review.thumbnailUrl;
-    if (filterType === 'before') return review.photoType === 'before';
-    if (filterType === 'after') return review.photoType === 'after';
+    // 사진 타입 필터
+    if (filterType === 'photo' && !review.thumbnailUrl) return false;
+    if (filterType === 'before' && review.photoType !== 'before') return false;
+    if (filterType === 'after' && review.photoType !== 'after') return false;
+    
+    // 언어 필터
+    if (languageFilter !== 'all' && review.language !== languageFilter) return false;
+    
     return true;
   });
 
@@ -90,6 +111,22 @@ const ReviewManagementSection: React.FC<ReviewManagementSectionProps> = ({
                   <SelectItem value="photo">사진 있는 리뷰</SelectItem>
                   <SelectItem value="before">Before 사진</SelectItem>
                   <SelectItem value="after">After 사진</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Globe className="w-4 h-4 text-gray-500" />
+              <Select value={languageFilter} onValueChange={setLanguageFilter}>
+                <SelectTrigger className="w-36">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  {languageOptions.map(option => (
+                    <SelectItem key={option.value} value={option.value}>
+                      {option.label}
+                    </SelectItem>
+                  ))}
                 </SelectContent>
               </Select>
             </div>
@@ -129,6 +166,7 @@ const ReviewManagementSection: React.FC<ReviewManagementSectionProps> = ({
                 <TableHead className="w-24">작성일</TableHead>
                 <TableHead className="w-32">작성자</TableHead>
                 <TableHead>리뷰 내용</TableHead>
+                <TableHead className="w-20">언어</TableHead>
                 <TableHead className="w-24">사진</TableHead>
                 <TableHead className="w-32">좋아요</TableHead>
                 <TableHead className="w-24">관리</TableHead>
@@ -162,6 +200,12 @@ const ReviewManagementSection: React.FC<ReviewManagementSectionProps> = ({
                         {review.content}
                       </p>
                     </div>
+                  </TableCell>
+                  
+                  <TableCell>
+                    <Badge variant="outline" className="text-xs">
+                      {getLanguageLabel(review.language)}
+                    </Badge>
                   </TableCell>
                   
                   <TableCell>

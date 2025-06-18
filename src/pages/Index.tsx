@@ -1,8 +1,8 @@
 
-import ContentManagement from "@/components/ContentManagement";
+import { StudioDashboard } from "@/components/StudioDashboard";
 
 const Index = () => {
-  return <ContentManagement />;
+  return <StudioDashboard />;
 };
 
 export default Index;

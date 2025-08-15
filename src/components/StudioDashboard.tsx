@@ -98,7 +98,7 @@ export const StudioDashboard = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+    <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 min-h-full">
       <div className="container mx-auto p-6 space-y-8">
         {/* 헤더 영역 */}
         <div className="flex items-center justify-between">

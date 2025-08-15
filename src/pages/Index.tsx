@@ -1,8 +1,8 @@
 
-import AdminDashboard from '@/components/AdminDashboard';
+import Dashboard from "@/components/Dashboard";
 
 const Index = () => {
-  return <AdminDashboard />;
+  return <Dashboard />;
 };
 
 export default Index;

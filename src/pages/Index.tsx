@@ -5,9 +5,11 @@ import ShopContentManager from "@/components/ShopContentManager";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       <Header />
-      <ShopContentManager />
+      <main className="flex-1">
+        <ShopContentManager />
+      </main>
       <Footer />
     </div>
   );

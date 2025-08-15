@@ -1,8 +1,8 @@
 
-import Dashboard from "@/components/Dashboard";
+import { StudioDashboard } from "@/components/StudioDashboard";
 
 const Index = () => {
-  return <Dashboard />;
+  return <StudioDashboard />;
 };
 
 export default Index;

@@ -19,7 +19,7 @@ const App = () => (
         <SidebarProvider>
           <div className="min-h-screen flex w-full">
             <AppSidebar />
-            <div className="flex-1">
+            <div className="flex-1 w-full">
               <Routes>
                 <Route path="/" element={<Index />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

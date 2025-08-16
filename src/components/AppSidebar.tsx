@@ -1,4 +1,4 @@
-import { Home, Users, Settings, BarChart3, Package } from "lucide-react";
+import { Home, Search, Heart, User, MapPin } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 import {
@@ -6,7 +6,6 @@ import {
   SidebarContent,
   SidebarGroup,
   SidebarGroupContent,
-  SidebarGroupLabel,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
@@ -14,11 +13,10 @@ import {
 } from "@/components/ui/sidebar";
 
 const menuItems = [
-  { title: "홈", url: "/", icon: Home },
-  { title: "상점 관리", url: "/shops", icon: Package },
-  { title: "사용자 관리", url: "/users", icon: Users },
-  { title: "통계", url: "/analytics", icon: BarChart3 },
-  { title: "설정", url: "/settings", icon: Settings },
+  { title: "Home", url: "/", icon: Home },
+  { title: "Search", url: "/search", icon: Search },
+  { title: "Map", url: "/map", icon: MapPin },
+  { title: "My page", url: "/mypage", icon: User },
 ];
 
 export function AppSidebar() {
@@ -26,10 +24,9 @@ export function AppSidebar() {
   const isCollapsed = state === "collapsed";
 
   return (
-    <Sidebar collapsible="icon">
+    <Sidebar collapsible="icon" className="hidden md:flex">
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>메뉴</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {menuItems.map((item) => (

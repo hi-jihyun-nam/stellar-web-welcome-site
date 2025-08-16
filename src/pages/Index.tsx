@@ -12,9 +12,6 @@ const Index = () => {
         <BeautyPlatform />
       </main>
       <MobileNavigation />
-      <div className="hidden md:block">
-        <Footer />
-      </div>
     </div>
   );
 };
